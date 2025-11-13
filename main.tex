@@ -1,17 +1,55 @@
 \documentclass[11pt,a4paper]{article}
+
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[english]{babel}
-\usepackage{graphicx}
-\usepackage{hyperref}
+\usepackage{amssymb}
 \usepackage{geometry}
-\geometry{margin=2.5cm}
-\title{Analysis of International Privacy Standards}
-\author{Mattia Marinelli \\ Martina Zaccaria}
-\date{November 2025}
+\usepackage{array}
+\usepackage{float}
+\usepackage{enumitem}
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}  % Enables clickable links
+\usepackage{fancyhdr}   % For custom headers/footers
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{url}
+\usepackage{cite}
+
+
+\title{
+    \includegraphics[width=0.25\textwidth]{images/polito.png} \\[1.5cm]
+
+    {\LARGE \textbf{Analysis of International Privacy Standards}} \\[1.2cm]
+
+    {\LARGE Master's Degree in Cybersecurity} \\
+    {Politecnico di Torino} \\ [0.5cm]
+
+    {\normalsize Academic Year 2024/2025} \\[10cm]
+
+}
+
+\author{ Martina Zaccaria s342701 \\ Mattia Marinelli s338349}
+
+% Custom Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{International Privacy Standards}
+\fancyfoot[C]{\thepage}
+
 \begin{document}
+
 \maketitle
+
+\newpage
 \tableofcontents
-\bibliographystyle{ieeetr}
-\bibliography{references}
+
+
+
+\nocite{*}
+\bibliographystyle{plain} % puoi cambiare in alpha, ieee, apa, ecc.
+\bibliography{bibliografia}
+
+
 \end{document}
