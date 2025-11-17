@@ -1,0 +1,224 @@
+%section
+\subsection{What is NIST?}
+The National Institute of Standards and Technology (NIST) was founded in 1901 and is now part of the U.S. Department of Commerce. It is a United States government laboratory that works to develop, test, and recommend best practices for federal agencies, and other organizations relating to things such as online security.
+
+\vspace{\baselineskip}
+The standards and regulations set out by the NIST are recognized internationally, meaning any organization that follows the NIST’s standards for their business sector is trusted to be using the correct practices in their technology. NIST standards and regulations have been created for many Science, Technology, Engineering, and Mathematics (STEM) fields, from astrophysics to cybersecurity.
+\cite{encryptionconsulting_nist_2020} \cite{nist_aboutnist_2025}
+
+\vspace{\baselineskip}
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/nist_logo.png} % percorso e scala
+    \caption{NIST Logo}
+    \label{fig:nist_logo}
+\end{figure}
+
+\newpage
+%section
+\subsection{NIST SP 800 Series}
+The \textbf{NIST Special Publication (SP) 800 Series} is a collection of documents that provide guidance, recommendations, and standards for various aspects of information security and cybersecurity.
+It published in April 6, 2010 and it is still valid nowadays.
+
+\vspace{\baselineskip}
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/nist_libro.png} % percorso e scala
+    \caption{NIST Publication}
+    \label{fig:nist_libro}
+\end{figure}
+
+\vspace{\baselineskip}
+
+It has a lot of importance in the field of cybersecurity and information security for several reasons \cite{searchinform_nist_sp800_2025}:
+\begin{itemize}
+    \item \textbf{Industry Standardization:} the NIST SP 800 series provides widely accepted standards and guidelines that serve as a common reference point for organizations, government agencies, and industries globally. This standardization promotes consistency and interoperability in cybersecurity practices;
+    \item \textbf{Risk Management:} the series offers comprehensive guidance on risk management, helping organizations identify, assess, and mitigate cybersecurity risks effectively;
+    \item \textbf{Best Practices:} it documents are developed based on extensive research, collaboration with industry experts, and feedback from practitioners. They encapsulate best practices in cybersecurity, providing valuable insights and recommendations for improving security posture and resilience;
+    \item \textbf{Cryptographic Standards:} the cryptographic standards and guidelines in the series ensure the secure implementation of cryptographic mechanisms, which are fundamental to protecting sensitive data, communications, and systems from unauthorized access and manipulation;
+    \item \textbf{Continuous Improvement:} It is regularly updated to address emerging threats, technological advancements, and evolving regulatory requirements. Organizations can leverage these updates to stay abreast of the latest cybersecurity trends and enhance their security posture over time.
+\end{itemize}
+
+%section
+\subsection{NIST SP 800-122: Overview of the standard and Purpose} \cite{nist_sp800_122_2010}
+The purpose of this document is to assist Federal agencies in protecting the confidentiality of personally identifiable information (PII) in information systems, from inappropriate access, use, and disclosure.
+
+This standard provides practical, context-based guidance for identifying PII and determining what level of protection is appropriate for each instance of PII. 
+
+It also suggests safeguards that may offer appropriate levels of protection for PII and provides recommendations for developing response plans for incidents involving PII.
+
+%section
+\subsection{Definition of PII in NIST SP 800-122} \cite{nist_sp800_122_2010}
+In this standard, PII is defined in a different way with respect to ISO 29100 framework previously analysised:
+
+\vspace{\baselineskip}
+
+\textit{“any information about an individual maintained by an agency, including (1) any information that can be used to distinguish or trace an individual‘s identity, such as name, social security number, date and place of birth, mother‘s maiden name, or biometric records; and (2) any other information that is linked or linkable to an individual, such as medical, educational, financial, and employment information.”}
+
+\vspace{\baselineskip}
+
+Some key points in this definition are the following:
+
+\begin{itemize}
+    \item \textit{\textbf{“Distinguish an individual”}} refers to information that can be used to identify a specific individual, such as name, passport number or biometric data;
+    \item \textit{\textbf{“Trace an individual”}} refers to process sufficient information to determine a specific aspect of an individual’s activities or status;
+    \item \textit{\textbf{“Linked information"}} are information about or related to and individual that is logically associated with other information about the individual;
+    \item \textit{\textbf{“Linkable information”}} refers to information in which there is a possibility od logical association with other information about the individual.
+
+\end{itemize}
+\vspace{\baselineskip}
+
+Some examples of PII given by NIST SP 800-122 are:
+
+\begin{itemize}
+    \item Name, such as full name, maiden name, mother‘s maiden name, or alias;
+    \item Address information, such as street address or email address;
+    \item Asset information, such as Internet Protocol (IP) or Media Access Control (MAC) address;
+    \item Telephone numbers, including mobile, business, and personal numbers;
+    \item -	Information about an individual that is linked or linkable to one of the above (e.g., date of birth, place of birth, race, religion, weight, activities, geographical indicators, employment information, medical information, education information, financial information).
+
+\end{itemize}
+
+%section
+\subsection{PII and Privacy Principles} \cite{nist_sp800_122_2010}
+NIST SP 800-122 defines some \textbf{Privacy Principles}, also known as \textbf{Fair Information Practices}, that must be followed to guarantee correct protection, collection and maintenance of privacy information. 
+
+Some of them were already mentioned as general data privacy principle in the introductory section and follow the OECD Privacy Guidelines that are the most widely-accepted privacy principles, introduced in 1980.
+
+\subsubsection{Collection Limitation}
+There should be limits to the collection of personal data and any such data should be obtained by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject.
+
+\subsubsection{Data Quality and Accuracy}
+Personal data should be relevant to the purposes for which they are to be used, and, to the extent necessary for those purposes, should be accurate, complete and kept up-to-date.
+
+\subsubsection{Purpose Specification}
+The purposes for which personal data are collected should be specified not later than at the time of data collection.
+
+\subsubsection{Use Limitation}
+Personal data should not be disclosed, made available or otherwise used for purposes other than those specified, except with the consent of the data subject or by the authority of law.
+
+\subsubsection{Security Safeguards}
+Personal data should be protected by reasonable security safeguards against such risks as loss or unauthorized access, destruction, use, modification or disclosure of data.
+
+\subsubsection{Individual Participation}
+An individual should have the right to obtain from a data controller, or otherwise, confirmation of whether or not the data controller has data relating to him and to have communicated to him, data relating to him within a reasonable time.
+
+\subsubsection{Accountability}
+A data controller should be accountable for complying with measures which give effect to the principles stated above.
+
+\vspace{\baselineskip}
+By means of these privacy principles, it is possible to notice how privacy is much broader than just protecting the confidentiality of PII. To have a comprehensive privacy framework, organizations should take steps to establish policies and procedures that address all of these principles. These principles are used widely in this standard as they are directly relevant to the protection of PII. As a result, they will be mentioned in this chapter as appropriate.
+
+
+%section
+\subsection{PII Confidentiality Impact Levels} \cite{nist_sp800_122_2010}
+An important aspect mentioned in this section inside NIST SP 800-122, is the fact that all PII is not created equal. PII should be evaluated to determine its \textbf{impact level} and it should be protected based on its impact level. It takes into account additional PII considerations and should be used to determine if additional protections should be implemented.
+
+\vspace{\baselineskip}
+
+The PII confidentiality impact level (low, moderate, or high) indicates the potential harm that could result to the subject individuals and/or the organization if PII were inappropriately accessed, used, or disclosed. 
+
+This standard provides a list of factors an organization should consider when determining the PII confidentiality impact level. Each organization should decide which factors it will use for determining impact levels and then create and implement the appropriate policy, procedures, and controls.
+
+\subsubsection{Impact Level Definitions}
+To define PII confidentiality impact level, it is necessary to consider the harm caused from a breach of confidentiality. NIST SP 800-122 defines harm as:
+
+\vspace{\baselineskip}
+\textit{“any adverse effects that would be experienced by an individual whose PII was the subject of a loss of confidentiality, as well as any adverse effects experienced by the organization that maintains the PII”}.
+
+\vspace{\baselineskip}
+The three impact levels mentioned by this standard are the following:
+
+\vspace{\baselineskip}
+\textit{“The potential impact is \textbf{LOW} if the loss of confidentiality, integrity, or availability could be expected to have a limited adverse effect on organizational operations, organizational assets, or individuals. A limited adverse effect means that, for example, the loss of confidentiality, integrity, or availability might (…) result in minor financial loss; or result in minor harm to individuals.”}
+
+\vspace{\baselineskip}
+\textit{“The potential impact is \textbf{MODERATE} if the loss of confidentiality, integrity, or availability could be expected to have a serious adverse effect on organizational operations, organizational assets, or individuals. A serious adverse effect means that, for example, the loss of confidentiality, integrity, or availability might (…) result in significant financial loss; or result in significant harm to individuals that does not involve loss of life or serious life threatening injuries.”}
+
+\vspace{\baselineskip}
+\textit{“The potential impact is \textbf{HIGH} if the loss of confidentiality, integrity, or availability could be expected to have a severe or catastrophic adverse effect on organizational operations, organizational assets, or individuals. A severe or catastrophic adverse effect means that, for example, the loss of confidentiality, integrity, or availability might (…) result in major financial loss; or result in severe or catastrophic harm to individuals involving loss of life or serious life threatening injuries”}
+
+\vspace{\baselineskip}
+Some examples to understand better the difference between these levels of impact:
+
+\begin{itemize}
+    \item A breach of the confidentiality of PII at the \textbf{low impact level} would not cause harm greater than inconvenience, such as changing a telephone number;
+    \item The types of harm that could be caused by a breach involving PII at the \textbf{moderate impact level} include financial loss due to identity theft or denial of benefits, public humiliation, discrimination, and the potential for blackmail;
+    \item Harm at the \textbf{high impact level} involves serious physical, social, or financial harm, resulting in potential loss of life, loss of livelihood, or inappropriate physical detention.
+
+\end{itemize}
+
+\subsubsection{Factors for determining PII Confidentiality Impact Levels} \cite{nist_sp800_122_2010}
+The following are some relevant factors that the standard decides to highlight to better understand how these impact levels are determined. 
+
+However, these factors are for illustrative purposes: each instance of PII is different, and each organization has a unique set of requirements and a different mission. 
+
+\subsubsection{Identifiability}
+Organizations should evaluate how easily PII can be used to identify specific individuals. PII that is uniquely and directly identifiable may warrant a higher impact level than PII that is not directly identifiable by itself.
+
+\subsubsection{Quantity of PII}
+Organizations should consider how many individuals can be identified from the PII. Breaches of 25 records and 25 million records may have different impacts, not only in terms of the collective harm to individuals, but also in terms of harm to the organization‘s reputation and the cost to the organization in addressing the breach. For this reason, organizations should not set a lower impact level for a PII dataset simply because it contains a small number of records.
+
+\subsubsection{Data Field Sensitivity}
+Organizations should evaluate the sensitivity of each individual PII data field. Organizations may also consider certain combinations of PII data fields to be more sensitive, such as name and credit card number, than each data field would be considered without the existence of the others. Data fields may also be considered more sensitive based on potential harm when used in contexts other than their intended use.
+
+\subsubsection{Context of Use}
+This factor is related to the Fair Information Practices of Purpose Specification and Use Limitation: organizations should evaluate the purpose for which the PII is collected, stored, used, processed, disclosed, or disseminated. The context of use may cause the same PII data elements to be assigned different PII confidentiality impact levels based on their use.
+
+\subsubsection{Obligations to Protect Confidentiality}
+An organization that is subject to any obligations to protect PII should consider such obligations when determining the PII confidentiality impact level. Obligations to protect generally include laws, regulations, or other mandates. Decisions regarding the applicability of a particular law, regulation, or other mandate should be made in consultation with an organization‘s legal counsel and privacy officer because relevant laws, regulations, and other mandates are often complex and change over time.
+
+\subsubsection{Access to and Location of PII}
+Organizations may choose to take into consideration the nature of authorized access to and the location of PII. When PII is accessed more often or by more people and systems, or the PII is regularly transmitted or transported offsite, then there are more opportunities to compromise the confidentiality of the PII.
+
+\vspace{\baselineskip}
+Later in the standard, are shown some examples in order to help organizations to assign PII confidentiality impact levels to a specific instance of PII. These examples consider different scenarios, from Intranet Activity Tracking to Fraud, Waste, and Abuse Reporting Application.
+
+
+%section
+\subsection{Safeguards for PII} \cite{nist_sp800_122_2010}
+An important aspect that the standard highlights is that not all PII should be protected in the same way. Organizations should apply appropriate \textbf{safeguards} to protect the confidentiality of PII based on the PII confidentiality impact level. Some PII does not need to have its confidentiality protected, such as information that the organization has permission or authority to release. 
+
+\vspace{\baselineskip}
+NIST recommends using operational safeguards, privacy-specific safeguards, and security controls, such as:
+
+\begin{itemize}
+    \item \textbf{Creating Policies and Procedures}: organizations should develop comprehensive policies and procedures for protecting the confidentiality of PII. The foundational privacy principles reflect the organization‘s privacy objectives and they may also be used as a guide against which to develop additional policies and procedures. \\Organizations should consider developing privacy policies and associated procedures for access rules for PII within a system, PII incident response and data breach notification and limitation of collection, disclosure, sharing and use of PII. \\If the organization permits access to or transfer of PII through interconnected systems external to the organization or shares PII through other means, the organization should implement the appropriate documented agreements for roles and responsibilities.
+    \item \textbf{Awareness, Training and Education}: Organizations should reduce the possibility that PII will be accessed, used, or disclosed inappropriately by requiring that all individuals receive appropriate training before being granted access to systems containing PII. \\The goal of training is to build knowledge and skills that will enable staff to protect PII. \\An organization should have a training plan and implementation approach, and an organization‘s leadership should communicate the seriousness of protecting PII to its staff. 
+    \item \textbf{De-Identifying PII}: Organizations can de-identify records by removing enough PII such that the remaining information does not identify an individual and there is no reasonable basis to believe that the information can be used to identify an individual. De-identified records can be used when full records are not necessary, such as for examinations of correlations and trends. \\De-identified information can be re-identified by using a code, algorithm, or pseudonym that is assigned to individual records. \\The code, algorithm, or pseudonym should not be derived from other related information about the individual, and the means of re-identification should only be known by authorized parties and not disclosed to anyone without the authority to re-identify records. \\The re-identification algorithm must be maintained in a separate system, with appropriate controls in place to prevent unauthorized access to the re-identification information.
+    \item \textbf{Anonymizing information}: this concept is strictly related to the previous one, such as anonymized information is defined as information that has been de-identified but for which a code or other association for re-identification no longer exists. \\A lot of techniques are applied in order to ensure that data cannot be re-identified again, such as suppressing or generalizing the data, introducing noise or replacing data with the average value. Using these techniques, the information is no longer PII.
+    \item \textbf{Using Access Enforcement}: Organizations can control access to PII through access control policies and access enforcement mechanisms (e.g., access control lists). This can be done in many ways. \\One example is implementing role-based access control and configuring it so that each user can access only the pieces of data necessary for the user‘s role.
+    \item \textbf{Implementing Access Control for Mobile Devices}: Organizations can prohibit or strictly limit access to PII from portable and mobile devices, such as laptops, cell phones, and personal digital assistants (PDA), which are generally higher-risk than non-portable devices (e.g., desktop computers at the organization‘s facilities). 
+    \item \textbf{Providing Transmission Confidentiality}: Organizations can protect the confidentiality of transmitted PII. This is most often accomplished by encrypting the communications or by encrypting the information before it is transmitted. 
+\end{itemize}
+
+\vspace{\baselineskip}
+Portions of this section were submitted as contributions to the ISO/IEC 29100 Privacy Framework draft standard. 
+
+This standard includes many other safeguards and principles, such as separation of duties, least privilege, protection of information at rest, audit review and reporting, remote access and other already mentioned in previous sections of this report.
+
+%section
+\subsection{Incident Response for Breaches Involving PII} \cite{nist_sp800_122_2010}
+NIST SP 800-122 focuses its attention also on \textbf{incident response for breaches} that involve PII. Handling incidents and breaches involving PII is different from regular incident handling and may require additional actions by an organization. 
+It is possible to consider \textbf{different phases}.
+
+\subsubsection{Preparation}
+Preparation requires the most effort because it ensure that the breach is handled appropriately. Organizations should build their response plans for breaches involving PII into their existing incident response plans. \\The organization should determine if existing processes are adequate, and if not, establish a new incident reporting method for employees to report suspected or known incidents involving PII. \\Additionally, employees should be provided with a clear definition of what constitutes a breach involving PII and what information needs to be reported.
+
+\subsubsection{Detection and Analysis}
+Organizations may continue to use their current detection and analysis technologies and techniques for handling incidents involving PII. \\However, adjustments to incident handling processes may be necessary, such as ensuring that the analysis process includes an evaluation of whether an incident involves PII.
+
+\subsubsection{Recovery}
+Existing technologies and techniques for containment, eradication, and recovery may be used for breaches involving PII. \\However, changes to incident handling processes may be necessary, such as performing additional media sanitization steps when PII needs to be deleted from media during recovery.
+
+\subsubsection{Post-Incident Activity}
+The incident response plan should be continually updated and improved based on the lessons learned during each incident. Lessons learned might also indicate the need for additional training, security controls, or procedures to protect against future incidents.
+
+Additionally, the organization should use its response policy, developed during the planning phase, to determine whether the organization should provide affected individuals with remedial assistance.
+
+\subsection{Final Considerations}
+NIST SP 800-122 provides a comprehensive and really detailed guideline on which are the actions to be taken and the requirements to be followed to protect the confidentiality of PII. \\It is a really detailed document that gives the possibility to deeply understand the factors that have taken an important role in this ecosystem and how these guidelines can help many organizations to face these kinds of challenges. 
+
+Later in the report, it will be possible to make a comprehensive comparison of how these guidelines are analyzed in standard like NIST and others taken from the ISO/IEC 29000 series.
