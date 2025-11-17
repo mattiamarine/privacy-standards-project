@@ -41,13 +41,19 @@
 \begin{document}
 
 \maketitle
+\thispagestyle{empty}
+\clearpage
 
-\newpage
+\pagestyle{empty}
 \tableofcontents
 \newpage
 
 \section{Introduction to Privacy Standards}
 \input{sections/introduction.tex}
+\clearpage
+
+\pagestyle{fancy}
+\setcounter{page}{1}
 
 \nocite{*}
 \bibliographystyle{plain} % puoi cambiare in alpha, ieee, apa, ecc.
