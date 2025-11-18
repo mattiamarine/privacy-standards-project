@@ -44,6 +44,7 @@ Applicability of the standard includes:
 \end{itemize}
 
 \subsection{Key Definitions}
+\label{sec:key-definitions}
 \subsubsection{Personally Identifiable Information (PII)}
 The first key definition provided by the standard is that of Personally Identifiable Information (PII).
 PII is defined as information that can be used to establish a link between an information and a natural person to whom
@@ -221,3 +222,48 @@ supervision mechanisms should be established in order to ensure compliance with 
 
 Compliance with applciable data protection law could be monitored by one or more supervisory authorities. In those cases, adhering to the privacy
 compliance principle also means cooperating with these supervisory authorities and observing their guidelines and requests.
+
+\subsection{Actors and Roles in the Privacy Framework}
+It is important to understand and identify the differenct actors involved in the processing of PII and their respective roles and responsibilities.
+From a general perspective they have already been defined in \ref{sec:key-definitions}, but the standard also provides a more detailed classification and description.
+There are four main types of actors that can be identified: PII principals, PII controller, PII processors and third parties.
+
+\subsubsection{PII Principals}
+PII principals are the natural persons whose PII is provided to PII controllers and processors for processing. When applicable law requires it, PII principals give consent and state
+which are their privacy preferences regarding the processing of their PII. Some examples of PII principals include customers, employees, users of online services and patients.
+In order to be considered as a PII principal, the natural person must be identifiable, either directly or indirectly; if the natural person can be identified indireclty, for instance
+through an account identifier, a SSN or a combination of attributes, it is still considered as a PII principal.
+
+\subsubsection{PII controllers}
+PII controllers are the entities that determine why and how (that is the purpose and the means) PII is processed. They have the overall responsibility for ensuring that the processing of PII
+is compliant with privacy principles and applicable laws. For the same PII set, or the same set of operations performe upon PII, there can because more than one PII controller; in this case,
+the PII controllers should clearly define their respective roles and responsibilities regarding the processing of PII. A PII controller can also decide
+to have another entity process PII on its behalf. Examples of PII controllers include organizations, government agencies, service providers and data brokers.   
+
+\subsubsection{PII processors}
+PII processors are entities that process PII on behalf of the PII controller and according to its instructions. They do not determine the purpose or means of processing PII.
+They observer the defined privacy requirements and implement the necessary privacy controls to protect PII during processing. Examples of PII processors include cloud service providers,
+data analytics firms and third-party service providers. In some cases, the PII processor is bound by a contractual agreement with the PII controller.
+
+\subsubsection{Third Parties}
+Third parties are entities that are not directly involved in the processing of PII but can receive or access PII from PII controllers or processors. The third parties will become
+a PII controller on its own right only when it has received the PII in question.
+
+\subsubsection{Interactions}
+The actors defined above can interact with each other in different ways, depending on the scenario and the context of the processing.
+Some common interactions include:
+\begin{itemize}
+    \item PII principals provide their PII to PII controllers for specific purposes, such as accessing services, making purchases or participating in surveys.
+    \item PII controllers provide PII to PII processors for processing on their behalf
+    \item PII principals provide PII to a PII processor directly, and the latter process the PII on behalf of a PII controller
+    \item PII controllers provide the PII principal with PII related to the PII principal, for instance when the PII principal requests access to its data
+    \item PII processors provide PII to the PII principal, as mandated by the PII controller
+    \item PII processors provide PII to the PII controller, for instance after having performed the services required by the controller
+    \item PII controllers provide PII to third parties, for instance in the context of a business agreement
+    \item PII processors provide PII to third parties, as mandated by the PII controller
+\end{itemize}
+
+It is important to distisnguish between PII processors and thirs parties, because the the legal control of the PII remains with the PII controller when the PII is provided to a PII processor,
+while the legal control is transferred to the third party when the PII is provided to it, as it becomes a PII controller on its own right.
+For instance, when a third party decides to transfer PII it has received from a PII controller to another party, it will act as a PII controller in its own right and 
+will no longer be considered a third party with respect to that PII.
