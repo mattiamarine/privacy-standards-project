@@ -8,6 +8,7 @@ ISO/IEC 29151 is a crucial component of data privacy as it provides a comprehens
 
 \vspace{\baselineskip}
 The standard applies to all types and sizes of organisations, including public and private companies, government entities, and not-for-profit organisations. It is also applicable to all sectors and industries that process PII, such as healthcare, finance, education, and retail. 
+
 In general, it is applicable to all types and sizes of organizations acting as PII controllers, as defined in ISO/IEC 29100.
 The standard is designed to be flexible and can be tailored to each organisation's specific needs and circumstances.
 
@@ -46,7 +47,8 @@ against these risks.
 %section
 \subsection{Structure of the Standard}
 It is structured into several sections, each of which covers a specific aspect of privacy controls. The main sections of the standard include the scope, normative references, terms and definitions, privacy principles, and controls.
-The standard also includes several annexes that provide additional guidance and examples of privacy controls. These annexes cover topics such as the relationship between ISO 29151 and other standards, the implementation of privacy controls, and the management of privacy risks.
+
+The standard also includes several annexes that provide additional guidance and examples of privacy controls and cover topics such as the relationship between ISO/IEC 29151 and other standards, the implementation of privacy controls, and the management of privacy risks.
 
 
 \vspace{\baselineskip}
@@ -54,10 +56,76 @@ The controls presented in this standard can be used as reference for organizatio
 If required, controls can also be selected from other control sets or new controls can be designed to meet specific needs, as appropriate. 
 
 \vspace{\baselineskip}
-The following sections of this report provide a detailed analysis of privacy controls and guidelines defined in ISO/IEC 29151, by following ans adding more controls with respect to the ones defind in ISO/IEC 27002.
+The following sections of this report provide a detailed analysis of privacy controls and guidelines defined in \textbf{ISO/IEC 29151}, by following and controls defind in ISO/IEC 27002.
 The format for this part uses the relevant clause headings and numbering from ISO/IEC 27002 to allow cross-reference to that International Standard. 
 For these reason, in this report, some references to ISO/IEC 27002 will be present as well.
 
 
 %section
-\subsection{Information Security Policies}
+\subsection{Information Security Policies --> CITA 27002}
+\subsubsection{Objective and Implementation guidance}
+The objective of this control is to
+
+"\textit{provide management direction and support for information security in accordance with 
+business requirements and relevant laws and regulations.}"
+
+\vspace{\baselineskip}
+Organizations should define an information security policy which sets out the organisation's approach to managing its information security objectives.
+
+At lower level, the information security policy should be supported by policies related to specific topics, such as access control, physical and encironmental security, backup, cryptography, and so on.
+These policies should be communicated to employees and relevant external parties in a form that is 
+relevant, accessible and understandable to the intended reader.
+
+\subsubsection{Implementation guidance for the protection of PII}
+This section is present in ISO/IEC 29151 for every control analysed, in addition to the implementation guidance provided in ISO/IEC 27002.
+It is used in order to highlight in which way the control evolved to specifically address the protection of PII.
+
+\vspace{\baselineskip}
+For instance, for this specific control, ISO/IEC 29151 suggests that the information security policy should include specific aspects related to PII protection. 
+These aspects are described in the Annex 2 of the standard and include some guidance already mentioned in ISO 29100, such as:
+\begin{itemize}
+    \item the PII protection policy should be appropriate to the purpose of the organization;
+    \item it should define rules for making decisions in questions of protection of PII;
+    \item it should include a commitment to continual improvement;
+    \item it should be be transparent about the organization's collection and processing of PII.
+\end{itemize}
+
+%section
+\subsection{Organization of Information Security - Internal Organization}
+\subsubsection{Objective and Implementation guidance}
+The objective in this case is the following:
+
+"\textit{To establish a management framework to initiate and control the implementation and 
+operation of information security within the organization.}"
+\vspace{\baselineskip}
+
+These controls is divided into several sub-controls that cover different aspects of the internal organizations. The following sub-sections are the most relevant ones:
+
+\vspace{\baselineskip}
+\textbf{Information security roles and responsabilities}:
+\\
+Allocation of information security responsibilities should be done in accordance with the information security policies previously defined.
+It is important to define local responsabilities for the protection of assets and for information security risk management.
+\vspace{\baselineskip}
+Many organisations rely on an information security manager to take overall responsibility for the 
+development and implementation of information security and to support the identification of controls.
+
+However, responsibility for resourcing and implementing the controls will often remain with individual 
+managers. One common practice is to appoint an owner for each asset who then becomes responsible 
+for its day-to-day protection
+
+\vspace{\baselineskip}
+\textbf{Segregation of duties}
+\\
+This sub-control highlights the importance of reducing opportunities for unauthorized or unintentional modification or misuse of the organization's assets, by means of segregation of duties.
+It is important to guarantee that each individual has proper authorization for the access and use of assets.
+
+It may be difficult for small organizations to achieve segregation of duties, but they need to apply the control as far as it is possibile and eventually considering other controls.
+
+\vspace{\baselineskip}
+\textbf{Contact with authorities}
+\\
+One relevant aspect of this sub-control is the need to maintain contact with relevant authorities
+
+
+\subsubsection{Implementation guidance for the protection of PII}
