@@ -45,8 +45,10 @@ With data being collected at an unprecedented rate, privacy has never been more 
 These standards are so critical because in recent years, several high-profile \textbf{data breaches} have brought the issue of data privacy to the forefront. These breaches have exposed the sensitive personal information of millions of individuals, resulting in significant consequences for both individuals and businesses.
 According to a 2021 report by RiskBased Security, there were over 22 billion records exposed in data breaches during the first half of the year. The healthcare industry, for example, experienced a 47\% increase in data breaches.
 
+\vspace{\baselineskip}
 As an example, it is possible to consider the \textbf{2017 Equifax breach}. It is one of the largest credit reporting agencies in the United States and it experienced a massive data breach that compromised the personal information of over 147 million Americans. The stolen data included names, Social Security numbers, birth dates, addresses and, in some cases, driver's license numbers. This breach had far-reaching implications, as the stolen information could be used for identity theft, financial fraud and other criminal activities.
 
+\vspace{\baselineskip}
 Another rappresentative case is the \textbf{Facebook-Cambridge Analytica scandal}. In 2018, it was revealed that the political consulting firm Cambridge Analytica had improperly accessed the personal data of up to 87 million Facebook users. This data was then used to create targeted political advertising campaigns during the 2016 U.S. presidential election. The scandal raised concerns about the privacy practices of social media platforms and the potential misuse of personal data for political purposes.
 \cite{alation_dataprivacy_2025}
 
@@ -66,7 +68,7 @@ The consequences of non-compliance can vary, but they often include damages to y
 
 
 %section
-\subsection{Overview of Privacy Standards: NIST and ISO/IEC standards}
+\subsection{NIST and ISO/IEC standards}
 
 In today's digital landscape, the \textbf{National Institute of Standards and Technology (NIST)} and the \textbf{International Organization for Standardization (ISO)} dominate the standards scene, 
 offering more than just security guidelines: they provide a practical bridge between privacy requirements and technical implementation. 
@@ -82,20 +84,87 @@ These frameworks serve three crucial functions \cite{pembrokeprivacy_nist_iso_20
 
 In particular \textbf{NIST SP}, also known as the National Institute of Standards and Technology \textbf{Special Publication}, is a series of publications developed by the NIST in the United States that provide detailed guidance and recommendations on a wide range of topics related to cybersecurity and information security.
 
-In this report, the focus is on \textbf{NIST SP 800 series}, developed to address and support the security and privacy needs of U.S. Federal Government information and information systems.
+\subsubsection{What is NIST?}
+The \textbf{National Institute of Standards and Technology (NIST)} was founded in 1901 and is now part of the U.S. Department of Commerce. It is a United States government laboratory that works to develop, test, and recommend best practices for federal agencies, and other organizations relating to things such as online security.
 
+\vspace{\baselineskip}
+The standards and regulations set out by the NIST are recognized internationally, meaning any organization that follows the NIST’s standards for their business sector is trusted to be using the correct practices in their technology. NIST standards and regulations have been created for many Science, Technology, Engineering, and Mathematics (STEM) fields, from astrophysics to cybersecurity.
+\cite{encryptionconsulting_nist_2020} \cite{nist_aboutnist_2025}
+
+\vspace{\baselineskip}
+
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.65\textwidth]{images/nist_logo.png} % percorso e scala
+    \caption{NIST Logo}
+    \label{fig:nist_logo}
+\end{figure}
+
+\subsubsection{What is ISO/IEC?}
+\textbf{ISO/IEC Standard} is an international standard created by the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC). 
+
+These standards provide a set of specifications, guidelines, and best practices for a wide range of products, services, and processes. 
+
+\vspace{\baselineskip}
+ISO/IEC standards are designed to ensure that products and services are safe, reliable, and of high quality, and that they are compatible with each other.
+They also help to ensure that products and services are consistent and of a high quality, regardless of where they are produced or used. 
+ISO/IEC standards are also used to ensure that organizations comply with national and international laws, regulations, and guidelines. \cite{sixclicks_iso_iec_standard_2025}
+
+\vspace{\baselineskip}
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.55\textwidth]{images/iso_iec_logo.png} % percorso e scala
+    \caption{ISO/IEC Logo}
+    \label{fig:iso_iec_logo}
+\end{figure}
+
+
+%section
+\subsection{NIST SP 800 vs. ISO/IEC 29xx}
+\subsubsection{NIST SP 800 Series}
+In this report, the focus is on \textbf{NIST Special Publication (SP) 800 Series}, developed to address and support the security and privacy needs of U.S. Federal Government information and information systems.
+
+It is a collection of documents that provide guidance, recommendations, and standards for various aspects of information security and cybersecurity.
+
+\vspace{\baselineskip}
+It has a lot of importance in the field of cybersecurity and information security for several reasons \cite{searchinform_nist_sp800_2025}:
+\begin{itemize}
+    \item \textbf{Industry Standardization:} the NIST SP 800 series provides widely accepted standards and guidelines that serve as a common reference point for organizations, government agencies, and industries globally. This standardization promotes consistency and interoperability in cybersecurity practices;
+    \item \textbf{Risk Management:} the series offers comprehensive guidance on risk management, helping organizations identify, assess, and mitigate cybersecurity risks effectively;
+    \item \textbf{Best Practices:} it documents are developed based on extensive research, collaboration with industry experts, and feedback from practitioners. They encapsulate best practices in cybersecurity, providing valuable insights and recommendations for improving security posture and resilience;
+    \item \textbf{Cryptographic Standards:} the cryptographic standards and guidelines in the series ensure the secure implementation of cryptographic mechanisms, which are fundamental to protecting sensitive data, communications, and systems from unauthorized access and manipulation;
+    \item \textbf{Continuous Improvement:} It is regularly updated to address emerging threats, technological advancements, and evolving regulatory requirements. Organizations can leverage these updates to stay abreast of the latest cybersecurity trends and enhance their security posture over time.
+\end{itemize}
+
+In particular, the standard that will be analyzed in this report is the \textbf{NIST SP 800-122}, which provides guidelines for protecting the confidentiality of personally identifiable information (PII) in information systems. 
+
+\subsubsection{ISO/IEC 29xx Series}
 On the other hand, the family of standards analyzed is the \textbf{ISO/IEC 29000 series}, designed for global applicability, independent of legal jurisdiction. 
 While NIST gives practical and technical guidance, ISO 29xx standards focus more on normative specifications, in which roles and concepts are standardized.
 
-In this report some specific standards from both frameworks will be analyzed and at the end will be easier to understand how they complement each other to provide a comprehensive approach to data privacy and security.
+It is important to note the relationship between the Specification of ISO/IEC, by means of the following figure.
 
-%section
-\subsection{Privacy Standards Analysed}
-The privacy standards that will be analyzed in this report are the following:
+\vspace{\baselineskip}
+\begin{figure}[H] 
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/relation_iso.png} % percorso e scala
+    \caption{Relation between ISO/IEC 29xx standards\cite{} DEVI METTERE ISO 29151}
+    \label{fig:relation_iso}
+\end{figure}
+\vspace{\baselineskip}
+
+It is easy to notice how the three main standards of the ISO/IEC 29000 series are related to each other, and exactly these three standards will be analyzed in this report:
 \begin{itemize}
-    \item \textbf{ISO 29100}: Privacy framework;
-    \item \textbf{NIST SP 800-122}: Guide to Protecting the Confidentiality of Personally Identifiable Information (PII);
-    \item \textbf{ISO 29151}: Code of practice for personally identifiable information protection;
-    \item \textbf{ISO/IEC 29134}: Privacy impact assessment.
+    \item \textbf{ISO 29100 Privacy framework}: it provides a privacy framework which specifies a common privacy terminology, defines the actors and their roles in processing personally identifiable information (PII) and describes privacy safeguarding considerations;
+    \item \textbf{ISO 29151: Code of practice for personally identifiable information protection}: it establishes control objectives, controls and guidelines for implementing controls, to meet the requirements identified by a risk and impact assessment related to the protection of PII;
+    \item \textbf{ISO/IEC 29134: Privacy impact assessment}: this document gives guidelines for a process on privacy impact assessments, and a structure and content of a PIA report.
 \end{itemize}
+
+\vspace{\baselineskip}
+At the end of this analysis will be easier to understand how these international standards complement each other to provide a comprehensive approach to data privacy and security.
+
+
+
+
+
 
