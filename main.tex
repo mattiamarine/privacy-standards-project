@@ -10,6 +10,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}  % Enables clickable links
 \usepackage{fancyhdr}   % For custom headers/footers
+\setlength{\headheight}{14pt} % ensure sufficient headheight for fancyhdr
 \usepackage{xcolor}
 \usepackage{tcolorbox}
 \usepackage{booktabs}
@@ -48,17 +49,27 @@
 \tableofcontents
 \newpage
 
+\pagestyle{fancy}
+\setcounter{page}{1}
+
+% --- Sections ---
+
+% Introduction
 \section{Introduction to Privacy Standards}
 \input{sections/introduction.tex}
+\clearpage
+% Section 1: ISO/IEC 29100
+\input{sections/section01.tex}
+\clearpage
 
 \newpage
+% Section 2: NIST SP 800-122
 \section{NIST SP 800-122: Guide to Protecting the Confidentiality of PII}
 \input{sections/section02.tex}
 \clearpage
 
-\pagestyle{fancy}
-\setcounter{page}{1}
 
+\newpage
 \nocite{*}
 \bibliographystyle{plain} % puoi cambiare in alpha, ieee, apa, ecc.
 \bibliography{references}
