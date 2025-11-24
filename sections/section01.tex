@@ -1,10 +1,17 @@
 \section{ISO/IEC 29100}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/iso_iec_29100.png}
+    \caption{ISO/IEC 29100 Privacy framework}
+    \label{fig:iso-iec-29100}
+\end{figure}
+
 \subsection{Overview on the standards and its objectives}
 ISO/IEC~29100~\cite{iso_29100_2024} provides a high-level privacy framework for the protection of  \textbf{personally identifiable information (PII)} 
 within \textbf{information and communication technology (ICT)} systems. The demand for stronger privacy protection
 has increased significantly in recent years, especially with the rise of AI, IoT and global data sharing. 
-The standards aims to provide the foundation for building privacy-by-sdesign systems, ensuring that privacy considerations
+The standards aims to provide the foundation for building privacy-by-design systems, ensuring that privacy considerations
 are aligned with technological, as well as regulatory, requirements.
 
 For this purpose the privacy framework:
@@ -95,37 +102,38 @@ allow the collection and processing of their PII except for cases where applicab
 processing without consent. This includes providing clear and transparent information to the PII principals, before obtaining consent, 
 about their rights under the individual participation and access principle.
 
-Adhering to this principle also involves to provide mechanism to allow the PII principle to choose how their PII 
-is handled and, as well as for consent, to withdraw their consent at any time, easily and freely, following the privacy policy.
+Adhering to this principle also involves to provide mechanisms to \textbf{allow} the PII principle to choose how their PII 
+is handled and, as well as for consent, to \textbf{withdraw} their consent at any time, easily and freely, following the privacy policy.
 Even if consent is withdrawn, the PII controller could still be allowed to retain certain PII for 
 a specific period of time in order to comply with legal or contractual obligations.
 
+\vspace{\baselineskip}
 Regarding the \textbf{PII controller responsibility}, it is important to provide PII principals
 with clear and easily accessible mechanisms to manage their consent, as well as implementing 
 the PII principal's preferences as expressed in their consent.
 
-Sometimes, applicable law does not consider consent as a valid legal basis for processing PII, such as for 
+Sometimes, applicable law does not consider consent as a \textbf{valid legal basis} for processing PII, such as for 
 the consent of a minor given without a parent approval. Moreover, additional requirements for transferring PII internationally
 should be taken into account. The PII controller is in charge of complying with these additional provisions before processing PII.\@
 
 \subsubsection{Purpose legitimacy and specification}
 The purpose legitimacy and specification principle states that the purposes for the collection and processing of PII
-should be compliant with applicable laws and should be communicated to the PII principals before the collection or first use for a new purpose. 
+should be \textbf{compliant with applicable laws} and should be communicated to the PII principals \textbf{before the collection or first use} for a new purpose. 
 Clear and properly adapted language, in addition to sufficient details and explaination about the need to process sensitive PII, should be provided.
 
 \subsubsection{Collection limitation}
-Limiting the collection of PII means to collect only the PII within the bounds of applicable law and only those strictly necessary for the specified purposes.
-It is crucial to limit both the amount and the type of PII collected, in order to fulfil the specified purposes. Organizations should
+Limiting the collection of PII means to collect only the PII \textbf{within the bounds of applicable law} and only those strictly necessary for the specified purposes.
+It is crucial to limit both the \textbf{amount} and the \textbf{type} of PII collected, in order to fulfil the specified purposes. Organizations should
 carefully evaluate what PII is necessary to realize a specific purpose before its collection, and they should document the type and the reason why they 
 collect such PII.\@
 
-It is possible for the PII controller to collect additional PII for secondary purposes other than those originally requested by the PII princpal, 
+It is possible for the PII controller to collect \textbf{additional PII for secondary purposes} other than those originally requested by the PII princpal, 
 but only with the PII principal's consent. The PII principal shoul be able to choose whether or not to provide 
 such information and should be also informed of the fact that their response to the request can be optional.
 
 \subsubsection{Data minimization}
-Data minimization refers to designing and implementing data processing procedures that minimize
-the processed PII, as well as the number of stakeholders and people to whom PII is disclosed or who are allowed to process it. 
+Data minimization refers to designing and implementing data processing procedures that \textbf{minimize
+the processed PII}, as well as the number of stakeholders and people to whom PII is disclosed or who are allowed to process it. 
 Moreover, data minimization also involves ensuring the adoption of the \textbf{``need-to-know''} principle, for which
 only those individuals who need access to PII to perform their job functions should be granted such access.
 
@@ -133,12 +141,13 @@ The usage of interactions and transactions which do not involve the identificati
 in order to reduce the observability of their behaviour and limit the linkability of the PII collected.
 
 This principle is closely related to the collection limitation principle, but while the latter focuses on limiting data being collected
-in relation to the specified purpose, data minimization focuses on limiting the amount of PII processed and disclosed.
+in relation to the specified purpose, data minimization focuses on \textbf{limiting the amount of PII processed and disclosed}.
 
 \subsubsection{Use, retention and disclosure limitation}
 This principle involves to limit the use, retention and disclosure of PII to that which is necessary in order to fulfil specific purposes, 
 and to limit the use of PII to the purposes specified by the PII controller prior to collection.
-Moreover, PII should be retained only as long as necessary and thereafter should be destroyed or anonymized. When the stated purposes have expired but retention is required
+
+Moreover, PII should be retained only \textbf{as long as necessary} and thereafter should be \textbf{destroyed or anonymized}. When the stated purposes have expired but retention is required
 by applicable law, PII should be locked, which include archiving, securing and restricting access to it.
 
 When PII is transferred internationally, the PII controller should be aware of any additional national or local requirements that may apply in the destination country.
@@ -149,24 +158,24 @@ while PII that is collected is reliable before processing it, either if it is pr
 The validity and the correctness of PII prior to any changes claimed by the PII principal should be verified; this ensures that decisions 
 are properly authorized.
 
-In order to adhere to this principle, it is crucial to establish PII collection procedures and control mechanisms that 
+In order to adhere to this principle, it is crucial to \textbf{establish PII collection procedures and control mechanisms} that 
 periodically check the accuracy and quality of the PII that is collected and stored.
 
-This principle is particularly important when PII is used to make decisions that can affect the rights and freedoms of the PII principals, 
+This principle is particularly important when PII is used to make decisions that can affect the \textbf{rights and freedoms} of the PII principals, 
 that is if it can be used to grand or deny a specific benefit to the natural person. Moreover, it is also important when inaccurate data 
 can result in significant harm to the natural person.
 
 \subsubsection{Openness, transparency and notice}
 PII controller's policies, procedures and practices regarding the processing of PII should be provided
-to the PII principals in a clear and understabdable manner. This includes providing information about 
-the purposes for which PII is collected, the types of privacy stakeholders to whom the PII can be disclosed 
-and the identity of the PII controller, including contact details. PII principals should be informed about the choices and means offered by the PII controller in order 
+to the PII principals in a \textbf{clear and understandable manner}. This includes providing information about 
+the \textbf{purposes} for which PII is collected, the \textbf{types} of privacy stakeholders to whom the PII can be disclosed 
+and the \textbf{identity} of the PII controller, including contact details. PII principals should be informed about the \textbf{choices and means} offered by the PII controller in order 
 to limit the processing of and to access, correct and remove their information. Furthermore, when major changes in the way PII is handled
 are made, the PII principals must be notified.
 
-Transparency can be required, particularly if the processing involves a decision impacting the PII principal. Privacy stakeholders that process PII should 
+Transparency can be required, particularly if the processing involves a decision \textbf{impacting the PII principal}. Privacy stakeholders that process PII should 
 specify their policies and practices relating to the management of PII already available to the public, as well as it is required that all the contractual obligations that 
-impact PII proccessing should be documented and communicated both internally and externally, provided that those obligations are not confidential.
+impact PII proccessing should be documented and communicated both \textbf{internally and externally}, provided that those obligations are not confidential.
 
 Transparency and openness help the PII principals to understand which is the PII needed for the specified purpose, 
 which is the specified purpose for the collection and processing of PII and how their PII is being handled, the types
@@ -174,30 +183,32 @@ of authorized natural persons that can access the PII and to whom the PII can be
 retention and disposal of the PII.\@
 
 \subsubsection{Individual participation and access}
-PII principals should have, first of all, the ability to access and review their PII, provided that they are first
-authenticated with an appropriate level of assurance. Then, they should be able to challenge and verify the accuracy and 
+PII principals should have, first of all, the ability to \textbf{access and review} their PII, provided that they are first
+authenticated with an appropriate level of assurance. Then, they should be able to \textbf{challenge and verify} the accuracy and 
 the completeness of their PII, as well as to request corrections, amendments or deletions, which should be provided also
 to third parties to whom the PII has been disclosed. When a challenge is not resolved to the satisfaction of the natural person,
 it should be recorded by the organization and should be transmitted to the PII processors or other third parties that 
 have access to that information.
 
-Restricting access only to the PII owned by a specific PII principal, and not to the PII of other natural persons, is crucial, 
+\textbf{Restricting access} only to the PII owned by a specific PII principal, and not to the PII of other natural persons, is crucial, 
 unless the natural person accessing is acting on behalf of a PII principal that is unable to exercise their right of access. 
 
 \subsubsection{Accountability}
 Accountability principles involves lots of concrete and practical measures for protecting the PII.\@ First of all all the privacy-related
-polices, procedures and practices should be documented and communicated, and they must be implemented by a specified individual within the organization.
+polices, procedures and practices should be \textbf{documented and communicated}, and they must be implemented by a specified individual within the organization.
 This individual can also delegate its responsibilities to other individuals in the organization. 
 
 An equivalent level of privacy, with respect to that provided by the organization, should be ensured when PII is transferred to a third party or processed on behalf of the organization.
 This is usually achieved through \textbf{contractual agreements} that specify the privacy requirements and obligations of the third party.
 
-Personnel of the PII controller should be provided with appropriate training and awareness programs 
+Personnel of the PII controller should be provided with appropriate \textbf{training and awareness programs} 
 and efficient internal complaint handling mechanisms should be established.
 
-When privacy breaches occur, it is crucial to inform the PII principals, if the breach can lead to substantial
+\vspace{\baselineskip}
+
+When \textbf{privacy breaches} occur, it is crucial to inform the PII principals, if the breach can lead to substantial
 damage to them, as well as all the relevant privacy stakeholders, as required in some jurisdictions and depending 
-on the level of risk. Moreover, the PII principal should be informed about the measures taken to mitigate the impact of the breach, 
+on the level of risk. Moreover, the PII principal should be informed about the measures taken to \textbf{mitigate the impact} of the breach, 
 and it must also have the possibility to access appropriate and effective sanctions and remedies. If it is difficult or impossible
 to bring the natural person's privacy status back to a position, procedures for compensating the PII principal should be provided.
 
@@ -219,11 +230,11 @@ Morevore, this principle involves resolving the risks and vulnerabilities that a
 privacy risk assessment and audit processes. 
 
 \subsubsection{Privacy compliance}
-Conducting periodical audits using internal or external auditors is crucial in order to verify and 
-demonstrate that the processing procedures meet data protection and privacy requirements. Proper internal controls and 
-supervision mechanisms should be established in order to ensure compliance with relevant privacy law and with their security procedures. 
+Conducting \textbf{periodical audits} using internal or external auditors is crucial in order to verify and 
+demonstrate that the processing procedures meet data protection and privacy requirements. Proper \textbf{internal controls and 
+supervision mechanisms} should be established in order to ensure compliance with relevant privacy law and with their security procedures. 
 
-Compliance with applciable data protection law could be monitored by one or more supervisory authorities. In those cases, adhering to the privacy
+Compliance with applicable data protection law could be monitored by one or more supervisory authorities. In those cases, adhering to the privacy
 compliance principle also means cooperating with these supervisory authorities and observing their guidelines and requests.
 
 \subsection{Actors and Roles in the Privacy Framework}
@@ -266,7 +277,7 @@ Some common interactions include:
     \item PII processors provide PII to third parties, as mandated by the PII controller
 \end{itemize}
 
-It is important to distisnguish between PII processors and thirs parties, because the the legal control of the PII remains with the PII controller when the PII is provided to a PII processor,
+It is important to distisnguish between \textbf{PII processors} and \textbf{thirs parties}, because the the legal control of the PII remains with the PII controller when the PII is provided to a PII processor,
 while the legal control is transferred to the third party when the PII is provided to it, as it becomes a PII controller on its own right.
 For instance, when a third party decides to transfer PII it has received from a PII controller to another party, it will act as a PII controller in its own right and 
 will no longer be considered a third party with respect to that PII.\@
@@ -374,4 +385,4 @@ reflecting an approach that integrates both information security considerations 
 This framework is essential for organizations seeking to develop operational privacy controls and policies, supporting 
 alignment with other international standards within the ISO/IEC~27000 series. Even if ISO/IEC~29100 does not provide detaled technical 
 or organizational measures, it serves as a foundational reference on which more specific standards, such as ISO/IEC~29151 for PII protection 
-or ISO/IEC~39134 for privacy impact assessment, build. 
+or ISO/IEC~29134 for privacy impact assessment, build. 
