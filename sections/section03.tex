@@ -211,3 +211,297 @@ applicable data protection laws, so as a consequence, the  classification for an
 %section
 \subsection{Access Control - User Access Management}
 \subsubsection{Objective and Implementation guidance for the protection of PII}
+This control is focused on:
+
+\vspace{\baselineskip}
+"\textit{ensure authorized user access and prevent unauthorized access to systems and services.}"
+
+\vspace{\baselineskip}
+This means that procedures for user registration and de-registration should be implemented and provide also measures to manage a compromise of user access control, such as 
+the corruption or compromise of passwords or other user registration data.
+
+It is also important that organizations provide users with an appropriate right of access to the information systems processing PII, in 
+accordance with the data minimization principle described in ISO/IEC 29100. 
+It is necessary to limit access to information systems processing PII to only those users who really need that access. As a consequence, strong authentication methods should be applied for particular PII and PII processing.
+
+ISO/IEC 29151 focuses its attention also on the fact that large scale processing of PII can increase the risk of large scale breaches.
+Therefore, it is necessary to take special care when dealig with access rights for these privileged operations.
+The e granting and use of such rights should be recorded in relevant log files and regularly reviewed.
+
+
+%section
+\subsection{Cryptography}
+\subsubsection{Objective and Implementation guidance for the protection of PII}
+The objective in this case is:
+
+\vspace{\baselineskip}
+"\textit{to ensure proper and effective use of cryptography to protect the confidentiality, authenticity and/or integrity of information.}"
+
+\vspace{\baselineskip}
+For this specific section of the standard, no specific implementation guidance for the protection of PII is provided. 
+It is considered that the general guidance provided in ISO/IEC 27002 is sufficient to address the protection of PII as well.
+
+The following are some relevant aspects regarding Cryptography that are mentioned in ISO/IEC 27002 and automatically apply to PII protection.
+ When developing a cryptographic policy, the most important aspects to consider are the following:
+\begin{itemize}
+   \item based on a risk assessment, the required level of protection should be identified taking into account the type, strength and quality of the encryption algorithm required;
+   \item who is responsible for implement the policy and for managing the cryptographic keys;
+   \item the standards to be adopted for effective implementation throughout the organization;
+   \item the regulations and national restrictions that might apply to the use of cryptographic techniques in different parts of the world;
+   \item requirments for key management, such as key generation, distribution, storage, use, destruction and archiving;
+   \item protection of cryptographic keys against modification, loss or destruction, and against unauthorised access.
+\end{itemize}
+
+These are only the most relevant aspects mentioned in ISO/IEC 27002 and all of them can be applied to PII protection as well.
+
+%section
+\subsection{Physical and Environmental Security - Secure Areas and Equipment}
+\subsubsection{Objective and Implementation guidance for the protection of PII}
+The objective of this control is:
+
+\vspace{\baselineskip}
+"\textit{to prevent unauthorized physical access, damage and interference to the organization’s information
+and information processing facilities.}"
+
+\vspace{\baselineskip}
+This section of the standard contains many controls related to Physical and Environmental Security, such as supporting utilities, cabling security, equipment maintenance, secure disposal or re-use of equipement, and so on.
+They express some important concepts that have important roles in the Environmental Security.
+The following are the most relevant ones with respect to the subsection of \textbf{Secure Areas}:
+\begin{itemize}
+    \item \textbf{Physical Security Perimeter}: define perimeters to protect areas that contain sensitive and PII informations;
+    \item \textbf{Physical Entry Controls}: implement proper entry controls to prevent unauthorised access to secure areas;
+    \item \textbf{Protecting against External and Environmental Threats}: implement proper measures to protect secure areas from external and environmental threats, such as natural disasters, criminal activity, and so on;
+    \item \textbf{Working in Secure Areas}: implement proper procedures for employees and contractors working in secure areas, such as access control and supervision.
+\end{itemize}
+
+\vspace{\baselineskip}
+With respect to \textbf{Equipment}, the most relevant aspects are the following:
+\begin{itemize}
+    \item \textbf{Equipment Siting and Protection}: proper siting and protection of equipment to reduce the risks from environmental threats;
+    \item \textbf{Cabling Security}: proper protection of cabling carrying sensitive or PII information from interception, tapping or damage;
+    \item \textbf{Equipment Maintenance}: proper maintenance of equipment to ensure its continued availability and integrity;
+    \item \textbf{Secure Disposal or Re-use of Equipement}: proper procedures for the secure disposal or re-use of equipment containing sensitive or PII information, to prevent unauthorised access or disclosure.
+\end{itemize}
+
+\vspace{\baselineskip}
+In ISO/IEC 29151, \textbf{Secure Disposal or Re-use of Equipement} is the only one amplified with specific implementation guidance for the protection of PII.
+It specifies that equipment containing storage media that may possible contai PII should be destroyed or the PII should either be destroyed, deleted or overwritten using approved techniques,
+to render the original PII unrecoverable rather than simply using the standard delete function.
+For equipment containing storage media that may possibly contain encrypted 
+PII, the controlled destruction of decryption keys or key holders (such as smart cards), may be sufficient. 
+
+%section
+\subsection{Operations Security}
+\subsubsection{Objective and Implementation guidance for the protection of PII}
+Objectives:
+
+\vspace{\baselineskip}
+"\textit{to ensure correct and secure operation of information processing facilities;
+to protect against loss of data;
+to record events and generate evidence.}"
+
+\vspace{\baselineskip}
+Also in this case different are the controls analysed in this section of the standard.
+By focusing only on that ones that are amplified by ISO/IEC 29151, it is possible to identify \textbf{Operational Procedures and Responsabilities},
+\textbf{Backup} and \textbf{Logging and Monitoring}.
+
+\vspace{\baselineskip}
+\textbf{Operational Procedures and Responsabilities}:
+\\
+Operating procedures should be documented and made available to all users who need them.
+These includes the installation and configuration of systems, instructions for handling errors, system restart and recovery procedures for use in the event of system failure.
+
+\vspace{\baselineskip}
+Specific to PII protection, ISO/IEC 29151 suggests that development, testing and operational environments should be logically and, where possible, physically separate environments.
+Appropriate access controls should be implemented to ensure access is limited to properly authorized individuals.
+Where not permitted by law or by explicit consent of the PII principal, PII should not be used for purposes of development and testing without prior anonymization. 
+
+\vspace{\baselineskip}
+\textbf{Backup}:
+\\
+Backup copies of information, software and system images should be taken and tested regularly in accordance with an agreed backup policy.
+Adequate backup facilities should be provided to ensure that all essential information and software can be recovered following a disaster or media failure.
+
+Information systems processing PII should introduce additional or alternative mechanisms, such as off-site backups for 
+protection against loss of PII, ensuring continuity of PII processing operations, and providing the ability to restore 
+PII processing operations after a disruptive event, if only strictly necessary. 
+
+\vspace{\baselineskip}
+\textbf{Logging and Monitoring}:
+\\
+Event logs recording user activities, exceptions, faults and information security events should be produced, kept and regularly reviewed.
+Event logs should include userIDs, system activities, dates, times and details of key events, use of privileges, records of successful and rejected system access attempts, and so on.
+
+It is important also to protect log information against tampering and unauthorized access, to ensure its integrity.
+
+\vspace{\baselineskip}
+For PII protection, where possible, the event log should record which PII was accessed, what was done to the PII, especially for certain types of PII like health data.
+In addition, the PII controller should define procedures regarding whether, when and how log information can be made available to 
+or usable by the administrator for purposes such as security monitoring and operational diagnostics. 
+
+%section
+\subsection{Communications Security - Information Transfer}
+\subsubsection{Objective and Implementation guidance for the protection of PII}
+The objective is:
+
+\vspace{\baselineskip}
+"\textit{to maintain the security of information transferred within an organization and with any 
+external entity.}"
+
+\vspace{\baselineskip}
+This control is introduced in order to ensure that formal \textbf{Transfer Policies and Procedures} are in place to protect the transfer of information.
+It focuses also on requirements for \textbf{Confidentiality or Non-disclosure Agreements}, that need to reflect the organization's needs for the protection of information and should be identified, reguarly reviewed and documented.
+
+With respect to PII protection, ISO/IEC 29151 suggests to apply some appropriate measures to reduce the risk of PII leakage during information transfer.
+This can be solved by using encryption or other measures like de-identification, masking or obfuscation.
+For confidentiality or non-disclosure agreements, it is important to include the conditions under which external processing of PII may take place, and these conditions 
+should be part of an appropriate agreement (e.g., contract, confidentiality or non-disclosure agreement). 
+
+%section
+\subsection{System Acquisition, Development and Maintenance}
+This control contains two main sub-controls that ISO/IEC 29151 amplifies: \textbf{Security Requirements of Information Systems} and \textbf{Test Data}.
+Their objectives are the following:
+
+\vspace{\baselineskip}
+"\textit{to ensure that information security is an integral part of information systems across the 
+entire lifecycle. This also includes the requirements for information systems which provide services 
+over public networks}"
+
+"\textit{to ensure the protection of data used for testing.}"
+
+\vspace{\baselineskip}
+\textbf{Security Requirements of Information Systems}:
+\\
+The information security related requirements should be included in the requirements for new 
+information systems or enhancements to existing information systems.
+Identification and management of information security requirements and associated processes should 
+be integrated in early stages of information systems projects. Early consideration of information security 
+requirements, e.g. at the design stage can lead to more effective and cost efficient solutions.
+
+For protection of PII, ISO/IEC 29151 suggests that when developing or making significant changes to information systems that process PII, a PIA should be conducted. 
+The results of the PIA should be used to determine the 
+controls to treat the risks identified during the PIA process.
+Guidance for conducting PIAs is provided in ISO/IEC 29134, in the next chapter of this report.
+
+\vspace{\baselineskip}
+\textbf{Test Data}:
+\\
+Test data should be selected carefully, protected and controlled.
+Operational data containing PII should not normally be used for development and testing. The use of real PII in these 
+environments increases the risk of information compromise. Instead, organizations should either use synthetic data or 
+should take steps to ''hide'' (e.g., mask, obfuscate, de-identify) any real PII in use. 
+
+%section
+\subsection{Supplier Relationships}
+Supplier Relationships control focus on the following objective:
+
+\vspace{\baselineskip}
+"\textit{to ensure protection of the organization's assets that is accessible by suppliers.}"
+
+\vspace{\baselineskip}
+This section of the standard contains one main sub-control amplified by ISO/IEC 29151: \textbf{Information Security in Supplier Relationships}.
+It refers to the fact that information security requirements for mitigating the risks associated with supplier’s access to the 
+organization’s assets should be agreed with the supplier and documented.
+
+In the event that an organization needs to make use of the services of a PII processor, PII processors should be evaluated 
+on the basis of experience, trustworthiness and their ability to meet PII protection requirements.
+The organization acting as a PII controller should have a written contract with any supplier acting as a PII processor. 
+The contract should clearly allocate roles and responsibilities between the PII controller and the PII processor and should 
+contain appropriate clauses relating to PII protection in order to hold the PII processor accountable for the processing performed.
+
+The PII controller should ensure that their PII processors do not process the PII for any purposes other than those specified 
+in the contract or other legal agreement and that the PII processor securely dispose of PII.
+
+%section
+\subsection{Information Security Incident Management}
+The main control is \textbf{Management of Information Security Incident and Improvements} and it is focused on:
+
+\vspace{\baselineskip}
+"\textit{ensure a consistent and effective approach to the management of information security 
+incidents, including communication on security events and weaknesses.}"
+
+\vspace{\baselineskip}
+
+The two important sub-controls amplified in ISO/IEC 29151 are the following:
+\begin{itemize}
+    \item \textbf{Responsabilities and Procedures};
+    \item \textbf{Reporting Information Security Events}.
+\end{itemize}
+
+\vspace{\baselineskip}
+\textbf{Responsabilities and Procedures}:
+\\ 
+Management responsibilities and procedures should be established to ensure a quick, effective and 
+orderly response to information security incidents.
+
+Organizations should be capable of providing an effective response to a privacy incident and implement a privacy incident response plan.
+The privacy plan should include:
+\begin{itemize}
+    \item the definition of privacy incident and the scope of privacy incident response;
+    \item the establishment of a cross-functional privacy incident response team that develops, implements, tests, executes and reviews the privacy incident response plan;
+    \item clearly defined roles, responsibilities and authorities for all members of the privacy incident response team; 
+    \item an incident impact assessment  to determine the nature of any potential or actual harms to affected individuals;
+    \item procedures to determine whether notice to affected individuals and other designated entities is required, the timing for such notice and the form used to provide that notice.
+\end{itemize}
+
+\vspace{\baselineskip}
+Organizations may choose to integrate their privacy incident response plans with their security incident response plans or keep them separate. 
+An information security incident should trigger a review by the PII controller to determine if a data breach involving PII has taken place.
+
+\vspace{\baselineskip}
+\textbf{Reporting Information Security Events}:
+\\
+Information security events should be reported through appropriate management channels as quickly as possible.
+
+When PII is compromised, the rights and interests of the PII principal cannot be protected without immediate measures. 
+Jurisdictions may impose specific requirements related to the reporting or notification of security incidents involving PII.
+When a security incident related to PII occurs, the details of the incident should be notified as soon as possible to the relevant authorities.
+
+Organizations should provide affected PII principals access to appropriate and effective remedies, such as correction or 
+deletion of incorrect information, if a privacy breach has occurred. 
+
+%section
+\subsection{Compliance}
+\textbf{Compliance with Legal and Contractual Requirements}
+\\
+The objective is:
+
+\vspace{\baselineskip}
+"\textit{to avoid breaches of legal, statutory, regulatory or contractual obligations related to information security and of any security requirements.}"
+
+\vspace{\baselineskip}
+All relevant legislative statutory, regulatory, contractual requirements and the organization’s approach 
+to meet these requirements should be explicitly identified, documented and kept up to date for each 
+information system and the organization.
+
+Organizations should identify the laws and regulations related to PII protection to which they are subject. If these are 
+identified, then organizations should take necessary measures for those requirements.
+
+Organizations should develop PIAs and implement the resulting privacy treatment plans in order to help ensure that 
+programmes and services related to PII processing comply with privacy safeguarding requirements. Further guidance will 
+be found in ISO/IEC 29134. 
+
+They should also establish an audit programme to help verify that PII processing complies with relevant privacy 
+safeguarding requirements. The programme should specify the frequency with which audits are to be conducted.
+
+\vspace{\baselineskip}
+While in many jurisdictions it will be the PII controller who is ultimately responsible for ensuring compliance, all actors 
+involved in the processing of PII should take a proactive approach in identifying relevant privacy safeguarding 
+requirements arising from legal or other factors.
+
+\vspace{\baselineskip}
+\textbf{Information Security Reviews}
+\\
+The objective is:
+
+\vspace{\baselineskip}
+"\textit{to ensure that information security is implemented and operated in accordance with the 
+organizational policies and procedures.}"
+
+\vspace{\baselineskip}
+The organization’s approach to managing information security and its implementation should be reviewed 
+independently at planned intervals or when significant changes occur.
+
+If audits by individual interested parties are impractical or may increase risks to security, organizations should make 
+available to prospective interested parties , independent evidence that information security 
+is implemented and operated in accordance with the PII controller's policies and procedures.
