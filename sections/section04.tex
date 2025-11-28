@@ -208,6 +208,7 @@ risks. These should not be discarded but treated under wider stakeholder managem
 communications activity.
 
 \subsubsection{Perform the PIA}
+\label{sec:perform-PIA}
 
 \paragraph{Identify information flows of PII}
  The person responsible for conducting a PIA should consult with others in the organization and perhaps 
@@ -253,8 +254,15 @@ the organization should consider decomposing that risk into its sub-elements. Th
 allow the organization to identify which sub-element is contributing to the high impact or likelihood 
 and analyse it separately. This should help identify more appropriate controls.
 
+
+To estimate the likelihood of the threats, the organization should 
+consider the risk sources capacities, the vulnerabilities of the supporting assets
+and the existing or planned controls. To better understand how to estimate the level of impact
+and the likelihood
+of identified threats, refer to Section~\ref{sec:impact-and-likelihood}.
+
 Privacy risk analysis can be undertaken with varying degrees of details depending on the privacy risk, 
-the purpose of the analysis, and the information, data and resources available to support the analysis. 
+the purpose of the analysis and the information, data and resources available to support the analysis. 
 Analysis can be qualitative, semi-quantitative or quantitative, or a combination of these, depending on 
 the circumstances. In practice, qualitative analysis is often used first to obtain a general indication of the level of risk and 
 to reveal the major risks. When possible and appropriate, one should also undertake more specific and 
@@ -404,7 +412,7 @@ This section provides guidance on the contect of the PIA report.
 The PIA report's contens depend stronlgy on the type and sensitivity of 
 the PII being processed, on its nature and on the scope of the PIA being conducted.
 
-Some of the PIA report’s details may be confidential. They may address business issues that should not 
+Some of the PIA report's details may be confidential. They may address business issues that should not 
 be made public. They may address treatment options that may reveal sufficient details about residual 
 risks to increase the risk of system compromise. The organization should determine the appropriate audience for and contents of the PIA report and 
 its degree of confidentiality. A report provided in confidence to an independent auditor or to a data 
@@ -541,4 +549,63 @@ The PIA public summary should include for instance:
 \end{itemize}
 
 All the above information and all additional information in a transparent, clear and 
-comprehensible manner
+comprehensible manner.
+
+\subsection{Scale criteria on the level of impact and on the likelihood}
+\label{sec:impact-and-likelihood}
+In order to better understand how to estimate the level of impact and the likelihood
+of identified threats, as covered in Section~\ref{sec:perform-PIA} under the \textit{Assess privacy Risk} paragraph,
+the standard provides guidance on defining scale criteria for both impact and likelihood.
+
+\subsubsection{How to estimate the level of impact}
+The level of impact of the identified consequences should be estimated, taking into account those 
+consequences and the planned or implemented controls. The answer one should seek is
+how much damage can be caused by all the potential impacts. By answering this question, one can
+determine the level of impact, that can be:
+\begin{itemize}
+    \item \textbf{Negligible}: the impact does not affect or has a very few inconveniences upon
+    PII principals.
+
+    \item \textbf{Limited}: PII prinicpals may experience significant inconveniences, but they will be able to 
+    overcome despite some difficulties (such as extra costs, denial of access to business services, fear, stress, etc.)
+
+    \item \textbf{Significant}: PII principals will experience considerable difficulties that may take
+    a long time to overcome (such as blaklisting by banks, property damage, loss of employment, etc.)
+
+    \item \textbf{Maximum}: PII principals will experience severe or even irreversible consequences, which they
+    may not even overcome (such as financial distress, including debt or inability to work, long-term psychological or physical ailments, death, etc.)
+
+\end{itemize}
+
+The level that best matches the estimated impact should be selected.
+This level of impact can be later modified by including additional factors,
+such as the number of affected PII principals, the level of sensitivity of the processed PII,
+and the scale of the processing operation, which can be considered as aggravating factors.
+On the other hand, the level of impact can be reduced by considering
+additional factors such as poorly identifying PII, very few or no interconnections or recipients, and so on.
+An example for the level of impact is given in Table~\ref{tab:level_of_impact}.
+
+\input{tables/level_of_impact.tex}
+
+\subsubsection{How to estimate the likelihood}
+The likelihood of each threat being exploited should be estimated, taking into account the vulnerabilities 
+of the supporting assets and the capabilities of risk sources to exploit them.
+The answer one should seek is to what degree e can the properties of supporting assets be exploited in order to carry out a threat.
+The likelihood can be:
+\begin{itemize}
+    \item \textbf{Negligible}: the threat cannot be carrioud out by exploiting the properties
+    of the supporting assets.
+
+    \item \textbf{Limited}: the threat can be carried out with some difficulties for the selected risk resource
+    
+    \item \textbf{Significant}: the threat can be carried out with relative ease for the selected risk resource
+    
+    \item \textbf{Maximum}: the threat can be easily carried out by the selected risk resource
+\end{itemize}
+
+The level that best matches the estimated likelihood should be selected.
+This level of likelihood can be later modified by including additional factors, 
+such as access to the Internet, exchanges of data with foreign sites, interconnections 
+with other systems, and so on, which can be considered as aggravating factors.
+On the other hand, the level of likelihood can be reduced by considering
+additional factors such homogeneous systems, systems with no interconnections, and so on.
