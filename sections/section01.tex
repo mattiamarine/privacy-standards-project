@@ -1,0 +1,388 @@
+\section{ISO/IEC 29100}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/iso_iec_29100.png}
+    \caption{ISO/IEC 29100 Privacy framework}
+    \label{fig:iso-iec-29100}
+\end{figure}
+
+\subsection{Overview on the standards and its objectives}
+ISO/IEC~29100~\cite{iso_29100_2024} provides a high-level privacy framework for the protection of  \textbf{personally identifiable information (PII)} 
+within \textbf{information and communication technology (ICT)} systems. The demand for stronger privacy protection
+has increased significantly in recent years, especially with the rise of AI, IoT and global data sharing. 
+The standards aims to provide the foundation for building privacy-by-design systems, ensuring that privacy considerations
+are aligned with technological, as well as regulatory, requirements.
+
+For this purpose the privacy framework:
+\begin{itemize}
+    \item specifies a common privacy \textbf{terminology},
+    \item defines the \textbf{actors} and their \textbf{roles} in relation to PII,
+    \item describes privacy \textbf{requirements} and
+    \item references a set of known privacy \textbf{principles}.
+\end{itemize}
+
+The standard has been revised in 2024 to address modern challenges in cloud computing, data sovereignty and AI-driven data processing.
+
+\subsubsection{Purpose}
+The purposes of this standard are first of all to provide a common privacy terminology and structure that can be used
+for implementing privacy controls and protection mechanisms across different ICT systems and services.
+Privacy principles and the governance controls are defined in ISO/IEC 29100 and are intended to be applied to organizations, developers, 
+service providers and regulators. The standard also align with international legal frameworks, such as the GDPR, the California Consumer Privacy Act (CCPA) and others,
+in order to enable global privacy assurance and compliance. 
+
+\subsubsection{Scope and Applicability}
+As stated in the official documentation~\cite{iso_29100_2024}
+
+\vspace{\baselineskip}
+\textit{``ISO/IEC 29100 is applicable to natural persons and organizations involved in specifying, procuring, architecting, designing,
+developing, testing, maintaining, administering, and operating information and 
+communication technology systems or services where privacy controls are required for the processing of PII.''}
+\vspace{\baselineskip}
+
+This means that it is applicable to any organization, system or technology, regardless of the size or sector of the entity, which is involved in the processing of PII.\@ 
+It is \textbf{technology-neutral}, that means that it can be applied to a wide range of ICT systems across on-premise systems, cloud environments, mobile applications and 
+emerging technologies such as AI or blockchain.
+
+Applicability of the standard includes:
+\begin{itemize}
+    \item Data controlers and data processors,
+    \item Software and system developers,
+    \item Cloud service providers and digital platforms,
+    \item Regulatory bodies and auditors,
+    \item IT governance and privacy officers and
+    \item Organizations seeking to enhance their privacy posture.
+\end{itemize}
+
+\subsection{Key Definitions}\label{sec:key-definitions}
+
+\subsubsection{Personally Identifiable Information (PII)}
+The first key definition provided by the standard is that of Personally Identifiable Information (PII).
+PII is defined as information that can be used to establish a link between an information and a natural person to whom
+this information relates, or an information that is or can be directly or indirectly linked to a natural person.
+
+\subsubsection{PII controller}
+The PII controller is the privacy stakeholder(s) that determines the purposes and means
+for processing PII.\@ Moreover, it can also be a natural person who use data for personal purposes.
+
+Sometimes, a PII controller can devolve the responsibility of processing PII to another entity, such as a PII processor, 
+who would process the data on behalf of the controller.
+
+\subsubsection{PII processor}
+The PII processor is the privacy stakeholder that processes PII on behalf of the PII controller and according to its instructions.
+
+\subsubsection{PII principal}
+The PII principal is the data subject, also referred to as the natural person, to whom the PII relates.
+
+\subsubsection{Privacy control}
+Another important definition is that of privacy control. A privacy control is a measure that 
+can be implemented in order to reduce the likelihood of a privacy risk occurring or to mitigate the impact of a privacy risk.
+
+Privacy controls include organizational measures, such as policies and procedures, as well as physical and technical measures, 
+such as encryption, access controls and data minimization techniques. Control, in this context, is also used a synonym of safeguard or countermeasure.
+
+\subsubsection{Privacy Enhanching Technology (PET)}
+Privacy Enhanching Technology (PET) is any technology or privacy control consisting in ICT measures, products
+or services that protect privacy by minimizing PII or by preventing unnecessary or unwanted processing of PII, 
+without losing the functionality of the system.
+
+Some examples of PETs include anonymization, encryption, pseudonymization tools that delete, reduce, mask or de-identify PII.\@
+
+\subsection{The 11 Privacy Principles}
+The standard defines a set of 11 principles derived from existing principles developed by 
+countries and organizations around the world. These principles are intended to guide organizations in designing, developing and implementing effective privacy controls
+in ICT systems and privacy management systems. Moreover, they can be used as a baseline for the monitoring and measurement of performance.
+
+Even if factors such as social, cultural and economic differences can limit the application of these principles, it is strongly
+reccomended to take them into account when dealing with PII.\@ The following sections provide an overview of the 11 privacy principles~\cite{iso_29100_2024}.
+
+\subsubsection{Consent and choice}
+The consent principle states that the PII principal should have the \textbf{right to choose} whether or not to 
+allow the collection and processing of their PII except for cases where applicable laws or regulations allow the
+processing without consent. This includes providing clear and transparent information to the PII principals, before obtaining consent, 
+about their rights under the individual participation and access principle.
+
+Adhering to this principle also involves to provide mechanisms to \textbf{allow} the PII principle to choose how their PII 
+is handled and, as well as for consent, to \textbf{withdraw} their consent at any time, easily and freely, following the privacy policy.
+Even if consent is withdrawn, the PII controller could still be allowed to retain certain PII for 
+a specific period of time in order to comply with legal or contractual obligations.
+
+\vspace{\baselineskip}
+Regarding the \textbf{PII controller responsibility}, it is important to provide PII principals
+with clear and easily accessible mechanisms to manage their consent, as well as implementing 
+the PII principal's preferences as expressed in their consent.
+
+Sometimes, applicable law does not consider consent as a \textbf{valid legal basis} for processing PII, such as for 
+the consent of a minor given without a parent approval. Moreover, additional requirements for transferring PII internationally
+should be taken into account. The PII controller is in charge of complying with these additional provisions before processing PII.\@
+
+\subsubsection{Purpose legitimacy and specification}
+The purpose legitimacy and specification principle states that the purposes for the collection and processing of PII
+should be \textbf{compliant with applicable laws} and should be communicated to the PII principals \textbf{before the collection or first use} for a new purpose. 
+Clear and properly adapted language, in addition to sufficient details and explaination about the need to process sensitive PII, should be provided.
+
+\subsubsection{Collection limitation}
+Limiting the collection of PII means to collect only the PII \textbf{within the bounds of applicable law} and only those strictly necessary for the specified purposes.
+It is crucial to limit both the \textbf{amount} and the \textbf{type} of PII collected, in order to fulfil the specified purposes. Organizations should
+carefully evaluate what PII is necessary to realize a specific purpose before its collection, and they should document the type and the reason why they 
+collect such PII.\@
+
+It is possible for the PII controller to collect \textbf{additional PII for secondary purposes} other than those originally requested by the PII princpal, 
+but only with the PII principal's consent. The PII principal shoul be able to choose whether or not to provide 
+such information and should be also informed of the fact that their response to the request can be optional.
+
+\subsubsection{Data minimization}
+Data minimization refers to designing and implementing data processing procedures that \textbf{minimize
+the processed PII}, as well as the number of stakeholders and people to whom PII is disclosed or who are allowed to process it. 
+Moreover, data minimization also involves ensuring the adoption of the \textbf{``need-to-know''} principle, for which
+only those individuals who need access to PII to perform their job functions should be granted such access.
+
+The usage of interactions and transactions which do not involve the identification of PII principals should be the default option, 
+in order to reduce the observability of their behaviour and limit the linkability of the PII collected.
+
+This principle is closely related to the collection limitation principle, but while the latter focuses on limiting data being collected
+in relation to the specified purpose, data minimization focuses on \textbf{limiting the amount of PII processed and disclosed}.
+
+\subsubsection{Use, retention and disclosure limitation}
+This principle involves to limit the use, retention and disclosure of PII to that which is necessary in order to fulfil specific purposes, 
+and to limit the use of PII to the purposes specified by the PII controller prior to collection.
+
+Moreover, PII should be retained only \textbf{as long as necessary} and thereafter should be \textbf{destroyed or anonymized}. When the stated purposes have expired but retention is required
+by applicable law, PII should be locked, which include archiving, securing and restricting access to it.
+
+When PII is transferred internationally, the PII controller should be aware of any additional national or local requirements that may apply in the destination country.
+
+\subsubsection{Accuracy and quality}
+Accuracy and quality principle ensure that PII that is processed is accurate, complete, up-to-date and relevant for the purpose of the use,
+while PII that is collected is reliable before processing it, either if it is provided by the PII principal or obtained from other sources.
+The validity and the correctness of PII prior to any changes claimed by the PII principal should be verified; this ensures that decisions 
+are properly authorized.
+
+In order to adhere to this principle, it is crucial to \textbf{establish PII collection procedures and control mechanisms} that 
+periodically check the accuracy and quality of the PII that is collected and stored.
+
+This principle is particularly important when PII is used to make decisions that can affect the \textbf{rights and freedoms} of the PII principals, 
+that is if it can be used to grand or deny a specific benefit to the natural person. Moreover, it is also important when inaccurate data 
+can result in significant harm to the natural person.
+
+\subsubsection{Openness, transparency and notice}
+PII controller's policies, procedures and practices regarding the processing of PII should be provided
+to the PII principals in a \textbf{clear and understandable manner}. This includes providing information about 
+the \textbf{purposes} for which PII is collected, the \textbf{types} of privacy stakeholders to whom the PII can be disclosed 
+and the \textbf{identity} of the PII controller, including contact details. PII principals should be informed about the \textbf{choices and means} offered by the PII controller in order 
+to limit the processing of and to access, correct and remove their information. Furthermore, when major changes in the way PII is handled
+are made, the PII principals must be notified.
+
+Transparency can be required, particularly if the processing involves a decision \textbf{impacting the PII principal}. Privacy stakeholders that process PII should 
+specify their policies and practices relating to the management of PII already available to the public, as well as it is required that all the contractual obligations that 
+impact PII proccessing should be documented and communicated both \textbf{internally and externally}, provided that those obligations are not confidential.
+
+Transparency and openness help the PII principals to understand which is the PII needed for the specified purpose, 
+which is the specified purpose for the collection and processing of PII and how their PII is being handled, the types
+of authorized natural persons that can access the PII and to whom the PII can be transferred, and finally the requirements for 
+retention and disposal of the PII.\@
+
+\subsubsection{Individual participation and access}
+PII principals should have, first of all, the ability to \textbf{access and review} their PII, provided that they are first
+authenticated with an appropriate level of assurance. Then, they should be able to \textbf{challenge and verify} the accuracy and 
+the completeness of their PII, as well as to request corrections, amendments or deletions, which should be provided also
+to third parties to whom the PII has been disclosed. When a challenge is not resolved to the satisfaction of the natural person,
+it should be recorded by the organization and should be transmitted to the PII processors or other third parties that 
+have access to that information.
+
+\textbf{Restricting access} only to the PII owned by a specific PII principal, and not to the PII of other natural persons, is crucial, 
+unless the natural person accessing is acting on behalf of a PII principal that is unable to exercise their right of access. 
+
+\subsubsection{Accountability}
+Accountability principles involves lots of concrete and practical measures for protecting the PII.\@ First of all all the privacy-related
+polices, procedures and practices should be \textbf{documented and communicated}, and they must be implemented by a specified individual within the organization.
+This individual can also delegate its responsibilities to other individuals in the organization. 
+
+An equivalent level of privacy, with respect to that provided by the organization, should be ensured when PII is transferred to a third party or processed on behalf of the organization.
+This is usually achieved through \textbf{contractual agreements} that specify the privacy requirements and obligations of the third party.
+
+Personnel of the PII controller should be provided with appropriate \textbf{training and awareness programs} 
+and efficient internal complaint handling mechanisms should be established.
+
+\vspace{\baselineskip}
+
+When \textbf{privacy breaches} occur, it is crucial to inform the PII principals, if the breach can lead to substantial
+damage to them, as well as all the relevant privacy stakeholders, as required in some jurisdictions and depending 
+on the level of risk. Moreover, the PII principal should be informed about the measures taken to \textbf{mitigate the impact} of the breach, 
+and it must also have the possibility to access appropriate and effective sanctions and remedies. If it is difficult or impossible
+to bring the natural person's privacy status back to a position, procedures for compensating the PII principal should be provided.
+
+These \textbf{compensation procedures} are important for establishing accountability because it provides a means for the PII principal
+to hold the PII controller accountable for PII misuse. This is important not only in the situation of identity theft, reputational damage
+or misuse of PII, but also in situations in which mistakes have been made in modifying or changing the respective PII.\@ Putting redress processes
+in place can help to build trust between the PII principals and the PII controllers, because the perceived risk for the natural person 
+with respect to the outcome is effectively reduced.
+
+\subsubsection{Information security}
+Information security principle refers to the protection of PII with appropriate controls at the operational, functional and strategical level
+in order to ensure the integrity, confidentiality and availability of PII and to prevent unauthorized access, disclosure, alteration or destruction of PII 
+throughout its whole lifecycle.
+
+These controls should be implemented depending on the \textbf{likelihood} and \textbf{severity} of the potential consequences, the \textbf{sensitivity} of the PII,
+the \textbf{number} of PII principals that can be affected and the \textbf{context} in which it is held.
+
+Morevore, this principle involves resolving the risks and vulnerabilities that are discoverd with a 
+privacy risk assessment and audit processes. 
+
+\subsubsection{Privacy compliance}
+Conducting \textbf{periodical audits} using internal or external auditors is crucial in order to verify and 
+demonstrate that the processing procedures meet data protection and privacy requirements. Proper \textbf{internal controls and 
+supervision mechanisms} should be established in order to ensure compliance with relevant privacy law and with their security procedures. 
+
+Compliance with applicable data protection law could be monitored by one or more supervisory authorities. In those cases, adhering to the privacy
+compliance principle also means cooperating with these supervisory authorities and observing their guidelines and requests.
+
+\subsection{Actors and Roles in the Privacy Framework}
+It is important to understand and identify the differenct actors involved in the processing of PII and their respective roles and responsibilities.
+From a general perspective they have already been defined in Section~\ref{sec:key-definitions}, but the standard also provides a more detailed classification and description.
+There are four main types of actors that can be identified: PII principals, PII controller, PII processors and third parties.
+
+\subsubsection{PII Principals}
+PII principals are the natural persons whose PII is provided to PII controllers and processors for processing. When applicable law requires it, PII principals give consent and state
+which are their privacy preferences regarding the processing of their PII.\@ Some examples of PII principals include customers, employees, users of online services and patients.
+In order to be considered as a PII principal, the natural person must be identifiable, either directly or indirectly; if the natural person can be identified indireclty, for instance
+through an account identifier, a SSN or a combination of attributes, it is still considered as a PII principal.
+
+\subsubsection{PII controllers}
+PII controllers are the entities that determine why and how (that is the purpose and the means) PII is processed. They have the overall responsibility for ensuring that the processing of PII
+is compliant with privacy principles and applicable laws. For the same PII set, or the same set of operations performe upon PII, there can because more than one PII controller; in this case,
+the PII controllers should clearly define their respective roles and responsibilities regarding the processing of PII.\@ A PII controller can also decide
+to have another entity processing PII on its behalf. Examples of PII controllers include organizations, government agencies, service providers and data brokers.   
+
+\subsubsection{PII processors}
+PII processors are entities that process PII on behalf of the PII controller and according to its instructions. They do not determine the purpose or means of processing PII.\@
+They observer the defined privacy requirements and implement the necessary privacy controls to protect PII during processing. Examples of PII processors include cloud service providers,
+data analytics firms and third-party service providers. In some cases, the PII processor is bound by a contractual agreement with the PII controller.
+
+\subsubsection{Third Parties}
+Third parties are entities that are not directly involved in the processing of PII but can receive or access PII from PII controllers or processors. The third parties will become
+a PII controller on its own right only when it has received the PII in question.
+
+\subsubsection{Interactions}
+The actors defined above can interact with each other in different ways, depending on the scenario and the context of the processing.
+Some common interactions include:
+\begin{itemize}
+    \item PII principals provide their PII to PII controllers for specific purposes, such as accessing services, making purchases or participating in surveys.
+    \item PII controllers provide PII to PII processors for processing on their behalf
+    \item PII principals provide PII to a PII processor directly, and the latter processes the PII on behalf of a PII controller
+    \item PII controllers provide the PII principal with PII related to the PII principal, for instance when the PII principal requests access to its data
+    \item PII processors provide PII to the PII principal, as mandated by the PII controller
+    \item PII processors provide PII to the PII controller, for instance after having performed the services required by the controller
+    \item PII controllers provide PII to third parties, for instance in the context of a business agreement
+    \item PII processors provide PII to third parties, as mandated by the PII controller
+\end{itemize}
+
+It is important to distisnguish between \textbf{PII processors} and \textbf{thirs parties}, because the the legal control of the PII remains with the PII controller when the PII is provided to a PII processor,
+while the legal control is transferred to the third party when the PII is provided to it, as it becomes a PII controller on its own right.
+For instance, when a third party decides to transfer PII it has received from a PII controller to another party, it will act as a PII controller in its own right and 
+will no longer be considered a third party with respect to that PII.\@
+
+\subsection{Privacy Safeguarding Requirements}
+Organizations are motivated to protect PII for a variety of reasons: to protect the PII principal's privacy, 
+to meet legal and regulatory requirements, to practice corporate responsibility and to enhance consumer 
+trust. ISO/IEC~29100~\cite{iso_29100_2024} provides an overview of the different factors that can influence the selection and implementation of privacy safeguarding requirements 
+relevant to a specific organization or privacy stakeholder involved in the processing of PII.\@
+
+Privacy safeguarding requirements can relate to many different aspects of PII processing, including the collection, the retention, the transfer to third parties,
+the contractual obligations among PII controllers and processors and the international transfers of PII.\@ Moreover, they can also vary in specificity, depending on the context and the scenario in which they are applied. 
+They can be very general, such as the high-level privacy principles an organization is expected to take into account when processing PII.\@ However, they can be very specific or mandate the implementation of specific privacy controls.
+
+The design of any ICT system that involves the processing of PII should be preceded by an identification 
+of relevant privacy safeguarding requirements. All the privacy implications of new or modified ICT systems involving the processing of PII
+should be resolved prior to their implementation, in order to ensure that the system is compliant with applicable privacy safeguarding requirements.
+Organizations routinely perform broad risk management activities and develop risk profiles related to their 
+ICT systems.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/privacy_safeguarding_requirements.png}
+    \caption{Factors influencing privacy risk management}
+    \label{fig:privacy-safeguarding-requirements}
+\end{figure}
+
+Privacy safeguarding requirements are identified as part of the overall privacy risk management process 
+which is influenced by the following factors (as shown in Figure~\ref{fig:privacy-safeguarding-requirements}):
+
+\begin{itemize}
+    \item \textbf{Legal and regulatory factors} for the safeguarding of the natural person's privacy and the protection of their PII;
+    \item \textbf{Contractual factors} such as agreements between and among several different actors, company policies and binding corporate rules;
+    \item \textbf{Business factors} predetermined by a specific business application or in a specific use case context;
+    \item \textbf{Other factors} that can affect the design of ICT systems and the associated privacy safeguarding requirements.
+\end{itemize}
+
+\subsubsection{Legal and regulatory factors}
+Privacy safeguarding requirements are often reflected in \textbf{(1)} international, national and local laws, 
+\textbf{(2)} regulations, \textbf{(3)} judicial decisions or \textbf{(4)} negotiated agreements with work councils or other labour 
+organizations. Some examples include data protection laws, consumer 
+protection laws, breach notification laws, data retention laws and employment laws. PII controllers should be aware of all relevant 
+privacy safeguarding requirements arising from legal or regulatory factors. To achieve this goal they 
+can coordinate closely with legal experts. While in many jurisdictions it will be the PII controller who is 
+ultimately responsible for ensuring compliance, all actors involved in the processing of PII should take a 
+proactive approach in identifying relevant privacy safeguarding requirements arising from legal or other 
+factors.
+
+\subsubsection{Contractual Factors} 
+Contractual obligations can also influence privacy safeguarding requirements. These obligations can stem 
+from agreements between and among several different actors, such as PII processors, PII controllers and 
+third parties. For example, a privacy stakeholder can require third parties to use specific privacy controls 
+and agree to specific PII disposal requirements before PII is transferred to them. Privacy safeguarding 
+requirements can also be the result of company policies and binding corporate rules that the privacy 
+stakeholder has set out for itself, for example, to protect its brand from negative publicity in the event of a 
+privacy breach.
+
+\subsubsection{Business Factors}
+Privacy safeguarding requirements can also be influenced by business factors which include the specific 
+characteristics of an envisaged application or its context of use. Business factors can vary widely depending 
+on the type of privacy stakeholder and type of business. For example, they can relate to the sector in which 
+an organization is active or the nature of its business model.
+
+Many business factors do not have a direct impact on privacy safeguarding requirements as such. The 
+envisaged use of PII is likely to affect an organization's implementation of privacy policies, as well as the 
+choice of privacy controls. However, the organization should not change the privacy principles it subscribes 
+to because of that. For example, offering a certain service can require a service provider to collect additional 
+PII or to allow more of its employees to process certain types of PII.\@ However, a PII controller that has 
+subscribed to the principles contained in this framework should still carefully assess which types of PII are 
+strictly needed to provide the service (principle of collection limitation) and to limit the processing of PII by 
+its employees to that needed in order to fulfil their duties (principle of data minimization).
+
+\subsubsection{Other factors}
+The most important factor for organizations to consider when identifying privacy safeguarding requirements 
+relates to the \textbf{privacy preferences} of PII principals. The personal disposition of a natural person towards 
+privacy and what risks a natural person considers can depend on a number of factors including the natural 
+person's understanding of the technology used, their background, the information being provided, the 
+purpose of the transaction, the natural person's past experience and socio-psychological factors.
+
+ICT system designers should attempt to understand the likely privacy concerns of a PII principal and 
+understand the types of PII that will be processed through their system. Just as a system developer or an 
+application or service provider studies customer target groups for usage expectations and their wants and 
+needs, it is important to try and understand the expectations and preferences of relevant natural persons 
+with respect to privacy. Although it is not always possible for ICT systems designers to provide PII principals 
+with choices that match their privacy preferences, it is an important design consideration.
+
+Examples of privacy preferences can include a preference for anonymity or pseudonymity, the ability to 
+restrict who can access specific PII or the ability to restrict the purpose for which the PII will be processed. 
+The ability to express privacy-friendly preferences can be implemented using the graphical user interface of the ICT system. 
+It can assist the PII principal in making a choice by presenting a set of pre-defined options for common privacy 
+preferences using easily understandable language. The implementation of the user interface can be based on 
+elements such as checkboxes or dropdown menus.
+
+In addition to the factors listed in the previous clauses, there are still other factors that can influence 
+the design of ICT systems and the associated privacy safeguarding requirements. For example, privacy 
+safeguarding requirements can be influenced by internal control systems or technical standards an 
+organization has adopted.
+
+\subsection{Conclusion}
+ISO/IEC~29100~\cite{iso_29100_2024} provides a comprehensive framework for the protection of PII within ICT systems.
+By defining key concepts, principles and roles, the standard helps organizations to design and implement effective privacy controls
+that are compliant with legal and regulatory requirements. It focuses on accountability, transparency, data minimization and individual, 
+reflecting an approach that integrates both information security considerations and organizational governance.
+
+This framework is essential for organizations seeking to develop operational privacy controls and policies, supporting 
+alignment with other international standards within the ISO/IEC~27000 series. Even if ISO/IEC~29100 does not provide detaled technical 
+or organizational measures, it serves as a foundational reference on which more specific standards, such as ISO/IEC~29151 for PII protection 
+or ISO/IEC~29134 for privacy impact assessment, build. 
