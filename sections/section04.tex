@@ -399,3 +399,146 @@ period of time, a new PIA should be conducted. Otherwise, an organization
 can decide if it is preferable to update the PIA with a simple audit, for instance, 
 in order to check whether basi conditions have changed.
 
+\subsection{PIA Report}
+This section provides guidance on the contect of the PIA report.
+The PIA report's contens depend stronlgy on the type and sensitivity of 
+the PII being processed, on its nature and on the scope of the PIA being conducted.
+
+Some of the PIA report’s details may be confidential. They may address business issues that should not 
+be made public. They may address treatment options that may reveal sufficient details about residual 
+risks to increase the risk of system compromise. The organization should determine the appropriate audience for and contents of the PIA report and 
+its degree of confidentiality. A report provided in confidence to an independent auditor or to a data 
+protection authority may contain more details than one provided to stakeholders or to the public.
+
+\subsubsection{Report Structure}
+The PIA report should be adapted to specific circumstances determined during the 
+earlier steps of the PIA process. However, in general, the PIA report should include
+a cover page with at least the name of the process, system or programme being assessed,
+the name and address of the PII controller and the organization
+that is conducting the PIA, the contact person along with contact details, the 
+date of the report and should also contain the name of those to whom 
+one can address questions about the report.
+
+It must include an introduction that explains why the PIA has been conducted, when it has
+been conducted and who was involved in the PIA process. It should contain
+information about the process, system or programme being assessed, including
+its purpose, scope and objectives, as well as any other contextual information
+about the organization and its environment that can be relevant 
+for understanding the rationale behind the PIA.
+
+The main body of the report should contain the details of each step
+of the PIA process. If the PIA report is long, is should also 
+incllude an executive summary that provides the main findings and reccomandations
+of the PIA and which stakeholders were consulted. It should 
+indicate why the PIA was conducted, who initiated the PIA and who conducted it.
+It should also identify the principle privacy impacts and the alternatives for minimizing or 
+avoiding negative impacts.
+
+\subsubsection{Scope of the PIA}
+The PIA report should clearly define the scope of the PIA. The organization
+should provide the most complete description possible of the process, system or programme
+being assessed in order to define the boundaries of the PIA. 
+
+The PIA report should state how individuals are notified that the organization is collecting information 
+about them, and what role individual consent plays in the process, information system or programme. 
+The organization should say how it intends to delete the PII once it is no longer needed. It should say 
+what procedures it will put in place to allow individuals to see their PII and to rectify it if necessary or 
+to request its deletion. The organization should also specify the costs, if any, of allowing 
+individual access to their PII and how much time it takes the organization to respond to requests.
+
+The PIA report should describe at least system requirements, the system design and the operational 
+plans and procedures as described in the following paragraphs.
+
+\paragraph{System Requirements}
+The PIA report should include a description of the system requirements, including:
+\begin{itemize}
+    \item the purpose of the processing of PII
+    \item a description of the business process that is supported by the information system
+    \item a list of all the functional requirements defined for the information system
+    \item the information security requirements
+    \item a description of how data will be collected, from whom and why.
+    \item a statement on the justificaition for processing the PII involved
+\end{itemize}
+
+\paragraph{System Design}
+The PIA report should include a description of the system design, including:
+\begin{itemize}
+    \item a description of the functional and physical architecture of the information system
+    \item the structure and list of information system components (databases, tables, fields that contain PII)
+    \item a data flow diagram showing the life cycle of the PII
+    \item a work flow diagram that describes when to notify and get consent from PII principals
+    \item a list of interfaces, defining the parties connected and the data fields transferred
+    \item details of ports, protocols, APIs and encryption detail
+\end{itemize}
+
+\paragraph{Operational Plans and Procedures information}
+The PIA report should include a description of the operational plans and procedures information, including:
+\begin{itemize}
+    \item the identity and user management concept for the information system
+    \item the operational concept including if the information system is operated on 
+    site or is externally hosted, or cloud sourced and where
+    \item the support concept, especially listing third parties by name who are involved in supporting the 
+    information system
+    \item the logging concept and the respective retention plans
+    \item the backup and recovery plans
+    \item the protection and management of metadata
+    \item the data retention and deletion plans
+\end{itemize}
+
+\vspace{\baselineskip}
+
+The PIA report should also describe the chosen risk criteria and should at least contain
+the criteria to estimate the level of impact and the likelihood of the identified privacy risks,
+the scales used for the estimation, as well as the criteria for risk acceptance.
+
+The report should also provide a statement on the composition of the PIA team, 
+the major milestones of the PIA process and he budget and resources spent. Moreover,
+the organization is expected, during the PIA process, to have identified the types of stakeholders to be consulted; 
+the report should include a list of those stakeholders and a summary of the consultation plan, including
+the result of the consultations.
+
+\subsubsection{Privacy Requirements}
+The PIA report should list the relevant sources for the requirements identified by the PIA team as 
+needing to be met. These may include legal, regulatory, business and contractual requirements. The report should
+also include a description of how these requirements have been identified and analysed.
+
+\subsubsection{Risk Assessment}
+The PIA report should include a description of the sources of privacy risks identified, 
+the determined threats and vulnerabilities that may allow identified risks to occur and 
+the estimated impact and likelihood of the identified privacy risks.
+The report should also provide a privacy risk map showing the level
+of the impact and the likelihood of each identified privacy risk. 
+Depending on where the risks are located on the map and depending on the risk
+criteria, priorities should be set.
+
+\subsubsection{Risk Treatement Plan}
+The PIA report should record the risk treatement plan and the stage of implementation
+of each of the defined actions and controls.
+
+\subsubsection{Conclusion and decision}
+The PIA report should also record the decisions that have been made
+during the PIA process on the acceptance of residual risks, on 
+implementation of the reccomandations and on non-publishing elements of the
+PIA report. 
+
+\subsubsection{PIA Public Summary}
+The assessor may decide to prepare a PIA public summary, that is a summary
+of the PIA report that can be published and made available to the public. In this
+way users, whether they are external PII principals or employees, can be provided 
+with privacy risk information, to support consent.  If necessary, the summary should remove commercially sensitive information that might be present in 
+the full PIA report and include only those key aspects relevant to PII principals.
+
+The PIA public summary should include for instance:
+\begin{itemize}
+    \item the benefits of the programme, system or process being assessed
+    \item the types of PII being processed
+    \item the PII types to be collected
+    \item legal jurisdictions under which the PII will be processed
+    \item a summary of the compliance analysis
+    \item a summary of the identified privacy risks
+    \item a summary of the selected risk treatment options
+    \item contact details for further information
+\end{itemize}
+
+All the above information and all additional information in a transparent, clear and 
+comprehensible manner
