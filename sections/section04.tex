@@ -1,0 +1,654 @@
+\section{ISO/IEC 29134}
+\label{sec:iso-iec-29134}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/iso_iec_29134.png}
+    \caption{ISO/IEC 29134 Guidelines for privacy impact assessment}
+    \label{fig:iso-iec-29134}
+\end{figure}
+
+The \textbf{ISO/IEC 29134 standard} provides guidelines for conducting \textbf{Privacy Impact Assessment (PIA)} 
+to help organizations identify and mitigate privacy risks associated with their projects, systems or processes,
+to all types of initiatives that involve the processing of personally identifiable information (PII).
+
+A Privacy Impact Assessment \cite{iso_iec_29134_2020} is a process that helps assessing the \textbf{potential
+impact} on privacy of a process, system, programme, software application, device or other initiative
+that processes personally identifiable information (PII). A PIA leads, 
+along with stakeholder consultations, to the \textbf{identification of the best
+actions} to mitigate privacy risks. A report is produced at the end of the PIA process
+and it may include documentation about the measures taken to address the risks.
+
+\vspace{\baselineskip}
+A PII controller may have the responsibility to conduct a PIA and may 
+request to a PII processor to assist in the PIA process, acting on the 
+PII controller's behalf. A PII processor or a supplier may also conduct 
+a PIA on its own initiative. 
+
+\vspace{\baselineskip}
+A PIA is typically conducted by an organization that takes its responsibility seriously and treats PII 
+principals adequately. In some jurisdictions, a PIA may be necessary to meet legal and regulatory 
+requirements.
+
+\vspace{\baselineskip}
+Controls deemed necessary to treat the risks identified during the privacy impact analysis process
+may be derived from multiple sets of controls, including ISO/IEC 27002 (for security controls) and 
+ISO/IEC 29151 (for PII protection controls).
+
+\subsection{Scope}
+As just mentioned, the ISO/IEC 29134 standard provides guidelines 
+for conducting Privacy Impact Assessments (PIAs) and for the structure
+and content of PIA reports. With this purposes, the standard is applicable
+to \textbf{all types of organizations, regardless of their size}, including
+public and private companies, government entities and non-profit organizations.
+The standard is also applicable to all types of initiatives that are involved
+in designing or implementing projects or systems that process personally identifiable information (PII).
+
+\subsection{Relationship with Other Standards}
+ISO/IEC 29134 does not operate in isolation but \textbf{is part of a broader ecosystem of standards}
+related to information security and privacy management. While ISO/IEC 29100 described in Section~\ref{sec:iso-iec-29100} provides
+a high-level framework for privacy principles, defining terminology, actors, roles,
+privacy principles and privacy requirements, focusing on the \textbf{"what"} of privacy management,
+ISO/IEC 29134 focuses on the \textbf{"how"}, providing a methodological implementation of the privacy principles
+defined in ISO/IEC 29100 through the PIA process.
+
+Furthermore, ISO/IEC 29151 described in Section~\ref{sec:iso-iec-29151} defines
+specific controls for the protection of PII, such as access control policies,
+logging, monitoring, encryption, key management, and many others, focusing on \textbf{"how to protect PII"}.
+ISO/IEC 29134 interacts with ISO/IEC 29151 by identifying the privacy risks
+that need to be mitigated through the implementation of the controls defined 
+in ISO/IEC 29151, and the PIA report may document the implementation of such controls.
+For instance, if a PIA (ISO/IEC 29134) identifies a risk related to unauthorized access to PII,
+ISO/IEC 29151 provides the necessary controls to mitigate that risk, which
+include control for cryptographic protection, for secure channels and for authentication
+mechansims.
+
+\subsection{Key Concepts and Definitions}
+The terms and definitions used in ISO/IEC 29100 (see Section~\ref{sec:iso-iec-29100}) and ISO/IEC 27000
+still apply in ISO/IEC 29134. In addition to those, ISO/IEC 29134 introduces specific terms related to Privacy Impact Assessments (PIAs).
+
+\subsubsection{Asset}
+An \textbf{asset} is any data, device or other component that \textbf{has a value} to anyone involved in the processing of PII. 
+In the context of a PIA process, an asset is either PII or a supporting asset.
+
+\subsubsection{Assessor}
+The \textbf{assessor} is the person or group of people responsible for conducting the PIA.
+The assessor may be an \textbf{internal resource} of the organization or an \textbf{external consultant} and
+may be supported by one or more other internal and/or external experts.
+
+\subsubsection{Privacy Impact}
+A \textbf{privacy impact} is anything that has an effect on the privacy of PII principal or a group of PII principals.
+The privacy impact could be the \textbf{result of the processing of PII} in a way that is not compliant
+with applicable privacy requirements.
+
+\subsubsection{Privacy Impact Assessment (PIA)} 
+A \textbf{Privacy Impact Assessment (PIA)} is a process of identifying,
+analysing, evaluating, communicating and planning the treatment 
+of privacy risks related to the processing of PII.
+
+\subsection{Preparing the grounds for PIA}
+The standard provides guidance that can be adapted to a wide range of situations where PII is 
+processed. However, in general, a PIA can be carried out for the purpose of \textbf{identifying privacy impacts, privacy risks and responsibilities}, 
+providing input to design for privacy protection, reviewing a new information system's privacy risks and assessing its impact and likelihood,
+sharing and mitigating privacy risks with stakeholders, or providing evidence relating to compliance.
+It provides a way to detect potential privacy risks arising from the processing of PII and thereby informing an organization of where they 
+should take precautions and build tailored safeguards before, not after, the organization makes heavy 
+investments. Amending a project at the planning stage is generally much less costly than making changes after implementation.
+
+\vspace{\baselineskip}
+A PIA can contribute to an organization's demonstration of its \textbf{compliance} with relevant privacy 
+and data protection requirements. In the event of privacy risk or breach occurring, 
+the PIA report can provide \textbf{evidence} that the organization acted 
+appropriately in attempting to prevent the occurrence. This can help to reduce or even eliminate any 
+liability, negative publicity and loss of reputation. It can also help to 
+build \textbf{trust and confidence} among customers, as it also demonstrates that it respects
+their privacy and is committed to protecting their personal data.
+
+\vspace{\baselineskip}
+PIA reporting should fulfil two basic functions. The first \textbf{keeps the specific stakeholders 
+informed} of identified affected entities, affected environment and privacy risks about the life cycle 
+of the affected entities. The second is a \textbf{tracking 
+mechanism} on the actions/tasks that improve and/or resolve the identified privacy risks.
+
+\subsection{Conducting a PIA}
+
+\subsubsection{Determine if a PIA is necessary}
+In order to determine whether a new or updated PIA is necessary, the organization should consider
+information about the programme, information system or process that is being assessed,
+with the purpose of performing a \textbf{threshold analysis} and to prepare a new or updated PIA if required.
+
+\vspace{\baselineskip}
+If a \textbf{new or updated PIA} is required, the organization, in collaboration with the assessor, should 
+define the terms of reference and determine the boundaries and applicability of the PIA in order 
+to establish its scope. The organization should decide on the scale of the PIA, the process
+to be used and the target audiences.
+
+A new or updated PIA may be necessary if the organization perceives impacts on privacy
+from a new technology, service or other initiative where PII is processed, or from a decision 
+that sensitive PII will be processed, from changes in applicable privacy
+related laws, regulations, standards or from business expansion or acquisition.
+
+\subsubsection{Preparation of the PIA}
+
+\paragraph{Set up the PIA team}
+The organization should determine which is the \textbf{scope} of the PIA
+and identify the \textbf{needed expertise} to conduct the PIA.
+A person responsible for coordinating the PIA, that is the assessor, 
+should be identified and appointed, as well as the person accountable
+for signing off the PIA report. 
+
+The assessor, on his side, should define the \textbf{risk criteria} and the crieria for 
+\textbf{risk acceptance}, and ensure that senior management agrees with the risk 
+criteria to be used to evaluate the significance of risk. The criteria should reflect 
+the organization's values, objectives and resources, and the assessor
+should consider legal, regulatory and contractual requirements, external 
+factors such as industry guidelines, professional standards and other factors that can 
+affect the design of information systems and associated privacy requirements.
+These criteria should be used later for privacy risk assessment and treatment.
+
+The output of this process should be included in the PIA report.
+
+\paragraph{Prepare a PIA plan}
+A \textbf{plan for conducting the PIA} should be prepared and human resources
+as well as budget should be allocated. The plan should include
+the \textbf{steps to be performed} and the \textbf{actions to be taken}, in terms of tasks and 
+needed time and resources. The plan should also include the identification
+of the \textbf{costs and level of effort} needed to conduct the PIA, deciding on the 
+allocation of budget and resources. 
+
+\vspace{\baselineskip}
+The plan should take into account the scope of the assessment being undertaken, allowing for iterations 
+if necessary. This should include iterations of the PIA report. This is particularly useful when the 
+assessment involves large-scale resources, but may not be necessary for smaller, less complex initiatives. 
+The plan should spell out \textbf{what} is to be done to complete the PIA, \textbf{who} on the PIA team will do what, 
+the \textbf{PIA schedule} and especially how the consultations, if any, will be carried out. It should specify 
+why it is important to consult stakeholders in this specific instance, who will be consulted, and how 
+they will be consulted 
+
+\vspace{\baselineskip}
+Once the assessor has prepared the PIA plan, they should estimate the \textbf{costs} of undertaking the PIA 
+and seek the \textbf{budgetary and human resources} necessary from the organization's senior management. 
+The plan may require an increase in the nominal budget initially set by the senior management, or the 
+person responsible for conducting a PIA may need to revise the PIA plan based on the budget available.
+
+\paragraph{Describing what is being Assessed}
+The organization should provide all the necessary information
+about the programme, system requirement information, system design information, operational plans,
+with the goal of providing a clear description of the business process and information system to be assessed.
+
+By establishing the \textbf{context}, the organization defines the relevant \textbf{internal and external parameters} to 
+be taken into account when managing privacy risk and setting the scope and privacy risk criteria for 
+the remaining process. In order to gain a clear view of the scope under consideration, the assessor should seek answers to
+questions such as what are the PII that will be processed, what is the purpose of the processing,
+what are the main benefits offered by the processing, who are the PII recipients, which
+principals are affected by the processing, and many other non-exhaustive questions.
+
+\vspace{\baselineskip}
+For each PII, the organization should identify the \textbf{supporting assets} (on which the PII rely) that will be 
+used or that are being used. It should identify the \textbf{location of those supporting assets}. 
+For the information system and supporting assets identified, the assessor should consult the commonly 
+used operational plans and procedures with their underlying concepts. 
+
+\paragraph{Identify the stakeholders and establish a consultation plan}
+The organization should identify all the \textbf{stakeholders} (including PII principals) who might process PII or 
+who might be impacted by the processing of their PII.  Examples of stakeholders may include employees, PII principals,
+worker and consumer representatives, business partners, computer or network administrators,
+application operators, maintenance people, and others.
+
+\vspace{\baselineskip}
+In order to make the PIA process \textbf{transparent} and achieve goals of the PIA for addressing the privacy 
+risks, the person responsible for conducting a PIA should identify in detail the internal or external 
+stakeholders who may have an interest in or be affected by either the process subject to a PIA or in the 
+protection of their PII under this process. 
+
+\vspace{\baselineskip}
+The \textbf{scope and scale} of the PII will be important in determining the appropriate stakeholders. Where a 
+large government project is being undertaken, there may be many stakeholders. In this case, societal 
+interest groups such as consumer representatives may need to be identified as well as stakeholders 
+who process PII and who are PII principals. In contrast, smaller commercial processing operations may 
+not need to identify such a wide stakeholder list.
+
+\vspace{\baselineskip}
+Moreover the assessor should establish a \textbf{consultation plan}, defining the methods and schedule for consulting
+the identified stakeholders during the PIA process. This plan should address 
+issues relating to the impact on the various privacy stakeholders, their 
+consequences (if known) and the measures being taken to manage them.  
+The range and number of stakeholders to be consulted should be a function 
+of the \textbf{privacy risks} and the assumptions about the \textbf{frequency 
+and level of impact} of those risks and the \textbf{numbers of citizen
+consumers} who could be impacted. For example, if the risks are likely 
+to impact only the employees of a single organization, then the 
+consultation could be limited to employees and/or their representatives. 
+If, however, the risks are expected to impact everyone in the country, 
+then the organization should consult widely with external stakeholders. 
+
+\vspace{\baselineskip}
+Feedback from stakeholders may identify issues that are \textbf{perceptions of risk} 
+rather than actual risks. These should not be discarded but
+treated under wider stakeholder management issues to aid 
+communications activity.
+
+\subsubsection{Perform the PIA}\label{sec:perform-PIA}
+
+\paragraph{Identify information flows of PII}
+The person responsible for conducting a PIA should consult with others in the organization and perhaps 
+external to the organization to describe the \textbf{PII flows} and specifically how PII is collected, who 
+is accountable and who is responsible within the organization for the PII processing, for what
+purpose PII is processed, how PII is processed, PII retention and disposal privacy and many other relevant aspects.
+
+\vspace{\baselineskip}
+As an input to the PIA, the organization should describe the information flow 
+in \textbf{as detailed a manner as possible} to help identify potential privacy risks. 
+The assessor should consider the impacts not only on information privacy, 
+but also compliance with privacy related regulations, e.g., telecommunications 
+acts. The whole PII life cycle should be considered.
+
+\paragraph{Determine the relevant privacy safeguarding requirements}
+The organization should identify the relevant \textbf{privacy safeguarding requirements}
+and the person responsible for conducting a PIA or their legal experts should ensure the business process 
+under scope complies with any legislative, regulatory, business factors and contractual requirements 
+regarding privacy and/or data protection.
+
+\paragraph{Assess privacy risk}
+Organizations should identify \textbf{privacy risks} to be assessed by applying 
+\textbf{privacy risk identification tools} and techniques which are suited to 
+its objectives and capabilities, and to the risks faced. The respective legal privacy principles of the 
+country in which the solution will be deployed should be used to support the identification of risks for 
+privacy breach. 
+
+\vspace{\baselineskip}
+Privacy risks include, but are not limited to unauthorized access to PII,
+unauthorized modification of PII, unauthorized removal or theft of the PII,
+excessive collection or inappropriate linking of PII, processing of PII without 
+the knowledge or consent of the PII principal,
+unnecessarily prolonged retention of PII, and many others. 
+Relevant and up-to-date information is important in identifying privacy risks. 
+The assessor should involve people with appropriate knowledge in identifying privacy risks. 
+After identifying what might happen, it is necessary to consider 
+possible scenarios that show what consequences can occur. 
+
+\vspace{\baselineskip}
+\textbf{Risk analysis} includes identifying the PII and supporting assets that may be at risk, 
+the vulnerabilities associated with those assets, the threats that might exploit those vulnerabilities, the
+likelihood and impact of that happening, as well as any existing controls that might influence the risk.
+Privacy risk analysis involves consideration of the causes and sources of privacy risk, their positive and 
+negative consequences, and the likelihood those consequences can occur. The assessor should identify 
+factors that affect consequences and likelihood. An event can have multiple consequences and can affect 
+multiple objectives. The assessor should take into account existing controls and their effectiveness.
+
+\vspace{\baselineskip}
+If a privacy risk is assessed as having a \textbf{high or very high impact} and/or is likely or very likely to occur, 
+the organization should consider decomposing that risk into its \textbf{sub-elements}. This decomposition will 
+allow the organization to identify which sub-element is contributing to the high impact or likelihood 
+and analyse it separately. This should help identify more appropriate controls.
+
+\vspace{\baselineskip}
+To estimate the likelihood of the threats, the organization should 
+consider the risk sources capacities, the vulnerabilities of the supporting assets
+and the existing or planned controls. To better understand \textbf{how to estimate the level of impact
+and the likelihood}
+of identified threats, refer to Section~\ref{sec:impact-and-likelihood}.
+
+\vspace{\baselineskip}
+Privacy risk analysis can be undertaken with varying \textbf{degrees of details} depending on the privacy risk, 
+the purpose of the analysis and the information, data and resources available to support the analysis. 
+Analysis can be \textbf{qualitative, semi-quantitative or quantitative}, or a combination of these, depending on 
+the circumstances. In practice, qualitative analysis is often used first to obtain a general indication of the level of risk and 
+to reveal the major risks. When possible and appropriate, one should also undertake more specific and 
+quantitative analysis of the risks.
+
+\paragraph{Treating privacy risks}
+The \textbf{privacy risk treatment options} should be identified and the most appropriate options should be selected.
+Risk treatment may include, but is not limited to, conducting application or process redesign, depending 
+on the scope of the assessment, context of risk management, or industry sector.
+Selecting the most appropriate privacy risk treatment option involves \textbf{balancing the costs and efforts} 
+of implementation against the organization's obligation for protecting the privacy of any stakeholder 
+whose privacy might be impacted by the organization.
+
+\vspace{\baselineskip}
+The privacy risk evaluation can also lead to a decision not to treat the privacy risk in any way other 
+than maintaining existing privacy controls. This decision will be influenced by the organization's \textbf{risk 
+appetite or risk attitude} and the privacy risk criteria that have been established.
+Wherever appropriate, an organization and/or the assessor should seek stakeholders support in the 
+selection of privacy risk treatment options. When selecting risk treatment options, the organization should consider the values and perceptions of 
+stakeholders and the most appropriate ways to communicate with them. Where privacy risk treatment 
+options can impact on risk elsewhere in the organization, these areas should be involved in the decision.
+
+\vspace{\baselineskip}
+There are four options available for privacy risk treatment: 
+\begin{itemize}
+    \item \textbf{Risk reduction}: can be achieved through the selection of appropriate controls. If after control 
+    selection there is still some \textbf{residual risk}, the organization should determine whether the residual 
+    risk is unacceptable and should be further addressed through the selection of additional controls, or 
+    determined to be acceptable to the organization and to the stakeholders.
+    Risk reduction controls will be varied in nature. They may involve changes to the kind of PII being processed,
+    changes to organizational structure, policies and/or procedures or changes to personnel qualifications.
+
+    \item \textbf{Risk retention}: if the level of risk meets the risk criteria, there is no need for implementing additional controls and the 
+    risk can be retained. 
+
+    \item \textbf{Risk avoidance}: when the identified risks are considered too high, the organization should decide to avoid the risk 
+    completely, by withdrawing from a planned or existing activity or set of activities, or changing the 
+    conditions under which the activity is operated.
+
+    \item \textbf{Risk transfer}: involves a decision to \textbf{share} certain risks with external parties. Transfer can be done by 
+    \textbf{insurance} that will support the consequences, or by \textbf{sub-contracting} a partner whose role will be to 
+    monitor the information system and take immediate actions to stop an attack before it makes a defined 
+    level of damage. Risk transfer can create new risks or modify existing, identified risks. Therefore, additional risk 
+    treatment may be necessary.
+    It may be possible to transfer the responsibility to manage risk but it is not normally possible to transfer 
+    the liability of an impact. Stakeholders will usually attribute an adverse impact as being the fault of the 
+    organization.
+\end{itemize}
+
+\vspace{\baselineskip}
+The appropriate controls for the selected risk treatment options as well as the legally required controls 
+should be identified. Controls that are already existing or planned that met the requirement of the ISO/IEC 29100 principles 
+should be described and evaluated. \textbf{Additional controls} may be selected from existing control sets defined in recognized international 
+standards or issued by recognized institutions. They may also be developed by the organization 
+independently of any existing control sets. If necessary, controls should be adapted to the specific 
+context of the programme, information system or process under consideration.
+
+If a control (or controls) is not selected to meet a compliance requirement, the organization 
+should document its rationale for not selecting a control (or controls). Reasons for not selecting a control 
+could include the lack of a suitable control, or the controls that are available are prohibitively expensive 
+in relation to the value of the asset to be protected.
+
+\vspace{\baselineskip}
+One or more privacy risk treatment plan(s) should be formulated and it should estimate the cost of implementing each control.
+The information provided in treatment plans should include what privacy safeguarding requirements protect against which risks, 
+a list of PII including nature and ownership of the PII to be protected, performance measures and constraints, proposed actions, 
+reporting and monitoring requirements, timing and scheduling, and many other relevant aspects. 
+The risk owner should approve the privacy risk treatment plan and accept the residual privacy risks. 
+
+\subsubsection{Follow up the PIA}
+
+\paragraph{Prepare the report}
+The penultimate step of the PIA process is the \textbf{recording of the results}
+of each of the previous steps in a comprhensive report. In this step,
+it should be decided which elements of the PIA report should be published
+and which elements should be shared with the stakeholders involved in the PIA process.
+The assessor should \textbf{prepare the PIA report and sign off} in the following step.
+
+\vspace{\baselineskip}
+For this purpose, the assessor should collect the output from the previous
+steps in the report. This report should be filed by the person who is 
+responsible for conducting the PIA and should be approved by the organization's
+management responsible for the process, system or programme that 
+is processing PII.
+
+Once ready, the report should be sent to the memeber of the organization
+that has commisioned the PIA for review and approval. 
+
+\paragraph{Publication}
+The last step of the PIA process is the \textbf{publication} of the PIA report 
+and a \textbf{PIA public summary}, if applicable.
+
+The organization should mantain a registry of PIA reports, that could be
+a simple listing of the PIAs, their titles and the dates the PIA reports
+were published. This registry should be made available to visitors, 
+especially PII principals to its website and they should be able to download
+a copy of any published PIA material.
+
+\paragraph{Implement privacy risk treatement plans}
+Once the PIA report has been signed off and published, several actions need 
+to be performed to \textbf{implement the privacy risk treatment plans} defined
+during the PIA process. 
+
+\vspace{\baselineskip}
+Before implementing the processing of PII, where possible, the organization should:
+\begin{itemize}
+    \item Provide adequate \textbf{training} to personnel involved in the project 
+    to make sure they are sensitive to the privacy implications, the possible 
+    impacts on privacy and what they or their collegues should do.
+
+    \item Provide the \textbf{budget} for implementing the selected controls
+    
+    \item Make both the \textbf{privacy policy} and \textbf{privacy practice statement} availabe to end-users, 
+    in case the service that is the object of the project is made available to the end-users
+    
+    \item Implement the \textbf{treatment plan}
+\end{itemize}
+
+\vspace{\baselineskip}
+The risk owner and the organization may not accept all of the PIA report's recommendations.
+In this case, the organization should document the \textbf{reasons for not accepting}
+the recommendations and communicate them to the assessor. Moreover, 
+the organization should monitor the implementation of the
+privacy risk treatment plans and the effectiveness of the implemented controls.
+
+\paragraph{Review and/or audit of the PIA}
+An organization may decide to review and/or audit the PIA process, establishing
+a policy for reviews and/or audits setting out types, schedules and thresholds that
+trigger them.
+
+Independent review or audit of the PIA is a way of ensuring the PIA has been conducted appropriately 
+and the organization has implemented the risk treatment plan or, if it has not implemented some 
+recommendations, then it can say why it has not done so.
+
+\vspace{\baselineskip}
+Third-party review or audit, where possible, is a way of giving \textbf{credibility} to the PIA report, of 
+improving \textbf{transparency}, of learning from experience and raising the quality of PIA practices. If the PIA 
+is conducted by a third party, then the review and/or audit of the PIA should not be carried out by the 
+same third party.
+
+\paragraph{Reflect changes to the process}
+If there are significant changes in the business process affecting 
+the processing of PII, the organization should have a mechanism for \textbf{updating
+the PIA report}. The organization should explain why changes are being made 
+and how these changes might affect the processing of PII. It should 
+verify that the processing of PII meets privacy safeguarding requirements
+by periodically conducting an internal audit or a trusted third-party audit.
+
+If the business process changes, or even after a previously defined
+period of time, a \textbf{new PIA} should be conducted. Otherwise, an organization
+can decide if it is preferable to update the PIA with a simple audit, for instance, 
+in order to check whether basi conditions have changed.
+
+\subsection{PIA Report}
+This section provides guidance on the contect of the \textbf{PIA report}.
+The PIA report's contents depend strongly on the type and sensitivity of 
+the PII being processed, on its nature and on the scope of the PIA being conducted.
+
+Some of the PIA report's details may be confidential. They may address business issues that should not 
+be made public. They may address treatment options that may reveal sufficient details about residual 
+risks to increase the risk of system compromise. The organization should determine the appropriate \textbf{audience} for and contents of the PIA report and 
+its degree of confidentiality. A report provided in confidence to an independent auditor or to a data 
+protection authority may contain more details than one provided to stakeholders or to the public.
+
+\subsubsection{Report Structure}
+The PIA report should be adapted to specific circumstances determined during the 
+earlier steps of the PIA process. However, in general, the PIA report should include
+a \textbf{cover page} with at least the name of the process, system or programme being assessed,
+the name and address of the PII controller and the organization
+that is conducting the PIA, the contact person along with contact details, the 
+date of the report and should also contain the name of those to whom 
+one can address questions about the report.
+
+\vspace{\baselineskip}
+It must include an \textbf{introduction} that explains why the PIA has been conducted, when it has
+been conducted and who was involved in the PIA process. It should contain
+\textbf{information about the process}, system or programme being assessed, including
+its purpose, scope and objectives, as well as any other contextual information
+about the organization and its environment that can be relevant 
+for understanding the rationale behind the PIA.
+
+The \textbf{main body} of the report should contain the details of each step
+of the PIA process. If the PIA report is long, it should also 
+include an \textbf{executive summary} that provides the main findings and reccomandations
+of the PIA and which stakeholders were consulted. It should 
+indicate why the PIA was conducted, who initiated the PIA and who conducted it.
+It should also identify the principle privacy impacts and the alternatives for minimizing or 
+avoiding negative impacts.
+
+\subsubsection{Scope of the PIA}
+The PIA report should clearly define the \textbf{scope} of the PIA. The organization
+should provide the \textbf{most complete description possible} of the process, system or programme
+being assessed in order to define the boundaries of the PIA. 
+
+The PIA report should state how individuals are \textbf{notified} that the organization is collecting information 
+about them, and what role individual consent plays in the process, information system or programme. 
+The organization should say how it intends to \textbf{delete} the PII once it is no longer needed. It should say 
+what procedures it will put in place to allow individuals to see their PII and to rectify it if necessary or 
+to request its deletion. The organization should also specify the \textbf{costs}, if any, of allowing 
+individual access to their PII and how much time it takes the organization to respond to requests.
+
+\vspace{\baselineskip}
+The PIA report should describe at least \textbf{system requirements}, the \textbf{system design} and the \textbf{operational 
+plans and procedures} as described in the following paragraphs.
+
+\paragraph{System Requirements}
+The PIA report should include a description of the system requirements, including:
+\begin{itemize}
+    \item the \textbf{purpose} of the processing of PII
+    \item a description of the \textbf{business process} that is supported by the information system
+    \item a list of all the \textbf{functional requirements} defined for the information system
+    \item the \textbf{information security requirements}
+    \item a description of \textbf{how data will be collected, from whom and why}
+    \item a statement on the \textbf{justification for processing the PII involved}
+\end{itemize}
+
+\paragraph{System Design}
+The PIA report should include a description of the system design, including:
+\begin{itemize}
+    \item a description of the \textbf{functional and physical architecture} of the information system
+    \item the s\textbf{tructure and list} of information system components (databases, tables, fields that contain PII)
+    \item a data flow diagram showing the \textbf{life cycle of the PII}
+    \item a work flow diagram that describes \textbf{when to notify and get consent} from PII principals
+    \item a list of \textbf{interfaces}, defining the parties connected and the data fields transferred
+    \item details of \textbf{ports, protocols, APIs and encryption detail}
+\end{itemize}
+
+\paragraph{Operational Plans and Procedures information}
+The PIA report should include a description of the operational plans and procedures information, including:
+\begin{itemize}
+    \item the \textbf{identity and user management concept} for the information system
+    \item the \textbf{operational concept} including if the information system is operated on 
+    site or is externally hosted, or cloud sourced and where
+    \item the \textbf{support concept}, especially listing third parties by name who are involved in supporting the 
+    information system
+    \item the \textbf{logging concept} and the respective retention plans
+    \item the \textbf{backup and recovery plans}
+    \item the \textbf{protection and management of metadata}
+    \item the \textbf{data retention and deletion plans}
+\end{itemize}
+
+\vspace{\baselineskip}
+The PIA report should also describe the \textbf{chosen risk criteria} and should at least contain
+the criteria to estimate the level of impact and the likelihood of the identified privacy risks,
+the scales used for the estimation, as well as the criteria for risk acceptance.
+
+\vspace{\baselineskip}
+The report should also provide a statement on the \textbf{composition of the PIA team}, 
+the \textbf{major milestones} of the PIA process and the \textbf{budget and resources spent}. Moreover,
+the organization is expected, during the PIA process, to have identified the types of stakeholders to be consulted; 
+the report should include a list of those stakeholders and a summary of the consultation plan, including
+the result of the consultations.
+
+\subsubsection{Privacy Requirements}
+The PIA report should list the \textbf{relevant sources for the requirements identified} by the PIA team as 
+needing to be met. These may include legal, regulatory, business and contractual requirements. The report should
+also include a description of how these requirements have been identified and analysed.
+
+\subsubsection{Risk Assessment}
+The PIA report should include a description of the \textbf{sources of privacy risks} identified, 
+the determined \textbf{threats and vulnerabilities} that may allow identified risks to occur and 
+the estimated \textbf{impact and likelihood} of the identified privacy risks.
+The report should also provide a privacy risk map showing the level
+of the impact and the likelihood of each identified privacy risk. 
+Depending on where the risks are located on the map and depending on the risk
+criteria, \textbf{priorities} should be set.
+
+\subsubsection{Risk Treatement Plan}
+The PIA report should record the \textbf{risk treatement plan} and the stage of implementation
+of each of the defined actions and controls.
+
+\subsubsection{Conclusion and decision}
+The PIA report should also record the decisions that have been made
+during the PIA process on the \textbf{acceptance of residual risks}, on 
+implementation of the \textbf{reccomandations} and on non-publishing elements of the
+PIA report. 
+
+\subsubsection{PIA Public Summary}
+The assessor may decide to prepare a \textbf{PIA public summary}, that is a summary
+of the PIA report that can be published and made available to the public. In this
+way users, whether they are external PII principals or employees, can be provided 
+with privacy risk information, to support consent. If necessary, the summary should 
+remove commercially sensitive information that might be present in 
+the full PIA report and include only those key aspects relevant to PII principals.
+
+\vspace{\baselineskip}
+The PIA public summary should include for instance:
+\begin{itemize}
+    \item the \textbf{benefits} of the programme, system or process being assessed
+    \item the \textbf{types} of PII being processed
+    \item \textbf{legal jurisdictions} under which the PII will be processed
+    \item a summary of the \textbf{compliance analysis}
+    \item a summary of the identified \textbf{privacy risks}
+    \item a summary of the selected \textbf{risk treatment options}
+    \item \textbf{contact details} for further information
+\end{itemize}
+
+All the above information and all additional information in a transparent, clear and 
+comprehensible manner.
+
+\subsection{Scale criteria on the level of impact and on the likelihood}
+\label{sec:impact-and-likelihood}
+In order to better understand how to estimate the level of impact and the likelihood
+of identified threats, as covered in Section~\ref{sec:perform-PIA} under the \textit{Assess privacy Risk} paragraph,
+the standard provides guidance on defining scale criteria for both impact and likelihood.
+
+\subsubsection{How to estimate the level of impact}
+The level of impact of the identified consequences should be estimated, taking into account those 
+consequences and the planned or implemented controls. The answer one should seek is
+\textbf{how much damage can be caused by all the potential impacts}. By answering this question, one can
+determine the level of impact, that can be:
+\begin{itemize}
+    \item \textbf{Negligible}: the impact does not affect or has a very few inconveniences upon
+    PII principals.
+
+    \item \textbf{Limited}: PII prinicpals may experience significant inconveniences, but they will be able to 
+    overcome despite some difficulties (such as extra costs, denial of access to business services, fear, stress, etc.)
+
+    \item \textbf{Significant}: PII principals will experience considerable difficulties that may take
+    a long time to overcome (such as blaklisting by banks, property damage, loss of employment, etc.)
+
+    \item \textbf{Maximum}: PII principals will experience severe or even irreversible consequences, which they
+    may not even overcome (such as financial distress, including debt or inability to work, long-term psychological or physical ailments, death, etc.)
+
+\end{itemize}
+
+\vspace{\baselineskip}
+The level that best matches the estimated impact should be selected.
+This level of impact can be later modified by including additional factors,
+such as the number of affected PII principals, the level of sensitivity of the processed PII,
+and the scale of the processing operation, which can be considered as aggravating factors.
+On the other hand, the level of impact can be reduced by considering
+additional factors such as poorly identifying PII, very few or no interconnections or recipients, and so on.
+An example for the level of impact is given in Table~\ref{tab:level_of_impact}.
+
+\input{tables/level_of_impact.tex}
+
+\subsubsection{How to estimate the likelihood}
+The likelihood of each threat being exploited should be estimated, taking into account the vulnerabilities 
+of the supporting assets and the capabilities of risk sources to exploit them.
+The answer one should seek is \textbf{what degree e can the properties of supporting assets be exploited in order to carry out a threat}.
+The likelihood can be:
+\begin{itemize}
+    \item \textbf{Negligible}: the threat cannot be carrioud out by exploiting the properties
+    of the supporting assets.
+
+    \item \textbf{Limited}: the threat can be carried out with some difficulties for the selected risk resource
+    
+    \item \textbf{Significant}: the threat can be carried out with relative ease for the selected risk resource
+    
+    \item \textbf{Maximum}: the threat can be easily carried out by the selected risk resource
+\end{itemize}
+
+\vspace{\baselineskip}
+The level that best matches the estimated likelihood should be selected.
+This level of likelihood can be later modified by including additional factors, 
+such as access to the Internet, exchanges of data with foreign sites, interconnections 
+with other systems, and so on, which can be considered as aggravating factors.
+On the other hand, the level of likelihood can be reduced by considering
+additional factors such homogeneous systems, systems with no interconnections, and so on.
