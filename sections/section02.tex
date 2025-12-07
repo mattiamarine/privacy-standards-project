@@ -15,13 +15,13 @@ It was published on April 6, 2010 and it is still valid nowadays.
 
 \vspace{\baselineskip}
 
-This standard provides practical, context-based guidance for identifying PII and determining what level of protection is appropriate for each instance of PII. 
+This standard provides practical context-based guidance for identifying PII and determining what level of protection is appropriate for each instance of PII. 
 
 It also suggests safeguards that may offer appropriate levels of protection for PII and provides recommendations for developing response plans for incidents involving PII.
 
 %section
 \subsection{Definition of PII in NIST SP 800-122} \cite{nist_sp800_122_2010}
-In this standard, PII is defined in a different way with respect to ISO 29100 framework previously analysised:
+In this standard, PII is defined in a different way with respect to ISO/IEC 29100 framework previously analysed:
 
 \vspace{\baselineskip}
 
@@ -35,7 +35,7 @@ Some key points in this definition are the following:
     \item \textit{\textbf{“Distinguish an individual”}} refers to information that can be used to identify a specific individual, such as name, passport number or biometric data;
     \item \textit{\textbf{“Trace an individual”}} refers to process sufficient information to determine a specific aspect of an individual’s activities or status;
     \item \textit{\textbf{“Linked information"}} are information about or related to and individual that is logically associated with other information about the individual;
-    \item \textit{\textbf{“Linkable information”}} refers to information in which there is a possibility od logical association with other information about the individual.
+    \item \textit{\textbf{“Linkable information”}} refers to information in which there is a possibility of logical association with other information about the individual.
 
 \end{itemize}
 \vspace{\baselineskip}
@@ -47,7 +47,7 @@ Some examples of PII given by NIST SP 800-122 are:
     \item Address information, such as street address or email address;
     \item Asset information, such as Internet Protocol (IP) or Media Access Control (MAC) address;
     \item Telephone numbers, including mobile, business, and personal numbers;
-    \item -	Information about an individual that is linked or linkable to one of the above (e.g., date of birth, place of birth, race, religion, weight, activities, geographical indicators, employment information, medical information, education information, financial information).
+    \item Information about an individual that is linked or linkable to one of the above (e.g., date of birth, place of birth, race, religion, weight, activities, geographical indicators, employment information, medical information, education information, financial information).
 
 \end{itemize}
 
@@ -55,13 +55,13 @@ Some examples of PII given by NIST SP 800-122 are:
 \subsection{PII and Privacy Principles} \cite{nist_sp800_122_2010}
 NIST SP 800-122 defines some \textbf{Privacy Principles}, also known as \textbf{Fair Information Practices}, that must be followed to guarantee correct protection, collection and maintenance of privacy information. 
 
-Some of them were already mentioned as general data privacy principle in the introductory section and follow the OECD Privacy Guidelines that are the most widely-accepted privacy principles, introduced in 1980.
+Some of them were already mentioned as general data privacy principle in the introductory section and follow the OECD Privacy Guidelines, the most widely-accepted privacy principles introduced in 1980.
 
 \subsubsection{Collection Limitation}
 There should be limits to the collection of personal data and any such data should be obtained by lawful and fair means and, where appropriate, with the knowledge or consent of the data subject.
 
 \subsubsection{Data Quality and Accuracy}
-Personal data should be relevant to the purposes for which they are to be used, and, to the extent necessary for those purposes, should be accurate, complete and kept up-to-date.
+Personal data should be relevant to the purposes for which it is used and, to the extent necessary for those purposes, must be accurate, complete, and up-to-date.
 
 \subsubsection{Purpose Specification}
 The purposes for which personal data are collected should be specified not later than at the time of data collection.
@@ -73,7 +73,8 @@ Personal data should not be disclosed, made available or otherwise used for purp
 Personal data should be protected by reasonable security safeguards against such risks as loss or unauthorized access, destruction, use, modification or disclosure of data.
 
 \subsubsection{Individual Participation}
-An individual should have the right to obtain from a data controller, or otherwise, confirmation of whether or not the data controller has data relating to him and to have communicated to him, data relating to him within a reasonable time.
+An individual should have the right to obtain from the data controller, or from someone acting on their behalf, confirmation
+of the existence or otherwise of data concerning them and to receive such data within a reasonable time.
 
 \subsubsection{Accountability}
 A data controller should be accountable for complying with measures which give effect to the principles stated above.
@@ -84,7 +85,7 @@ By means of these privacy principles, it is possible to notice how privacy is mu
 
 %section
 \subsection{PII Confidentiality Impact Levels} \cite{nist_sp800_122_2010}
-An important aspect mentioned in this section inside NIST SP 800-122, is the fact that all PII is not created equal. PII should be evaluated to determine its \textbf{impact level} and it should be protected based on its impact level. It takes into account additional PII considerations and should be used to determine if additional protections should be implemented.
+An important aspect mentioned in this section of NIST SP 800-122, is the fact that all PII is not created equal. PII should be evaluated to determine its \textbf{impact level} and it should be protected based on its impact level. It takes into account additional PII considerations and should be used to determine if additional protections should be implemented.
 
 \vspace{\baselineskip}
 
@@ -155,7 +156,7 @@ An important aspect that the standard highlights is that not all PII should be p
 NIST recommends using operational safeguards, privacy-specific safeguards, and security controls, such as:
 
 \begin{itemize}
-    \item \textbf{Creating Policies and Procedures}: organizations should develop comprehensive policies and procedures for protecting the confidentiality of PII. The foundational privacy principles reflect the organization‘s privacy objectives and they may also be used as a guide against which to develop additional policies and procedures. \\Organizations should consider developing privacy policies and associated procedures for access rules for PII within a system, PII incident response and data breach notification and limitation of collection, disclosure, sharing and use of PII. \\If the organization permits access to or transfer of PII through interconnected systems external to the organization or shares PII through other means, the organization should implement the appropriate documented agreements for roles and responsibilities.
+    \item \textbf{Creating Policies and Procedures}: organizations should develop comprehensive policies and procedures for protecting the confidentiality of PII. The foundational privacy principles reflect the organization‘s privacy objectives and they may also be used as a guide against which to develop additional policies and procedures. \\Organizations should consider developing privacy policies and associated procedures for access rules for PII within a system, PII incident response and data breach notification, limitation of collection, disclosure, sharing and use of PII. \\If the organization permits access to or transfer of PII through interconnected systems external to the organization or shares PII through other means, the organization should implement the appropriate documented agreements for roles and responsibilities.
     \item \textbf{Awareness, Training and Education}: Organizations should reduce the possibility that PII will be accessed, used, or disclosed inappropriately by requiring that all individuals receive appropriate training before being granted access to systems containing PII. \\The goal of training is to build knowledge and skills that will enable staff to protect PII. \\An organization should have a training plan and implementation approach, and an organization‘s leadership should communicate the seriousness of protecting PII to its staff. 
     \item \textbf{De-Identifying PII}: Organizations can de-identify records by removing enough PII such that the remaining information does not identify an individual and there is no reasonable basis to believe that the information can be used to identify an individual. De-identified records can be used when full records are not necessary, such as for examinations of correlations and trends. \\De-identified information can be re-identified by using a code, algorithm, or pseudonym that is assigned to individual records. \\The code, algorithm, or pseudonym should not be derived from other related information about the individual, and the means of re-identification should only be known by authorized parties and not disclosed to anyone without the authority to re-identify records. \\The re-identification algorithm must be maintained in a separate system, with appropriate controls in place to prevent unauthorized access to the re-identification information.
     \item \textbf{Anonymizing information}: this concept is strictly related to the previous one, such as anonymized information is defined as information that has been de-identified but for which a code or other association for re-identification no longer exists. \\A lot of techniques are applied in order to ensure that data cannot be re-identified again, such as suppressing or generalizing the data, introducing noise or replacing data with the average value. Using these techniques, the information is no longer PII.
@@ -188,7 +189,9 @@ The incident response plan should be continually updated and improved based on t
 
 Additionally, the organization should use its response policy, developed during the planning phase, to determine whether the organization should provide affected individuals with remedial assistance.
 
-\subsection{Final Considerations}
-NIST SP 800-122 provides a comprehensive and really detailed guideline on which are the actions to be taken and the requirements to be followed to protect the confidentiality of PII. \\It is a really detailed document that gives the possibility to deeply understand the factors that have taken an important role in this ecosystem and how these guidelines can help many organizations to face these kinds of challenges. 
+\subsection{Conclusion}
+NIST SP 800-122 provides a comprehensive and detailed guideline on which are the actions to be taken and the requirements to be followed to protect the confidentiality of PII. 
+It outlines a risk-based approach to determine the impact level of PII breaches and recommends appropriate operational and technical safeguards.
+\\It is a really detailed document that gives the possibility to deeply understand the factors that have taken an important role in this ecosystem and how these guidelines can help many organizations to face these kinds of challenges. 
 
 Later in the report, it will be possible to make a comprehensive comparison of how these guidelines are analyzed in standard like NIST and others taken from the ISO/IEC 29000 series.
