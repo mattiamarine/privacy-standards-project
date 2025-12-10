@@ -1,0 +1,208 @@
+\section{Comparative Analysis}\label{sec:comparative-analysis}
+
+The four standards analyzed in the previous sections address the protection of 
+Personal Identifiable Infoormation (PII) from different perspectives and with varying levels of detail
+but are yet \textbf{complementary} to each other. In particular, ISO/IEC 29100 provides a \textbf{high-level framework} for PII protection,
+NIST SP 800-122 focuses on \textbf{practical guidelines} for safeguarding PII in IT systems,
+ISO/IEC 29151 translates the high-level principles of ISO/IEC 29100 into specific \textbf{operational controls} for PII protection 
+and finally ISO/IEC 29134 provides a structured \textbf{process for conducting Privacy Impact Assessments (PIAs)} to identify and mitigate privacy risks.
+
+\vspace{\baselineskip}
+Even if they originate from different ecosystem, with ISO being an \textbf{international standard} for global applicability
+and NIST being a U.S. \textbf{federal standard}, all of them contribute to a comprehensive understanding of PII protection
+and can be used together to enhance privacy practices within organizations. 
+
+\vspace{\baselineskip}
+
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}[
+    node distance=2cm,
+    every node/.style={rectangle, draw, rounded corners, align=center, minimum width=5cm, minimum height=1cm}
+]
+
+% Nodes
+\node (iso29100) {ISO/IEC 29100\\\textit{Privacy Framework}};
+\node (iso29134) [above=of iso29100] {ISO/IEC 29134\\\textit{Privacy Impact Assessment}};
+\node (iso29151) [above=of iso29134] {ISO/IEC 29151\\\textit{PII Protection Controls}};
+
+\node (nist) [right=4.5cm of iso29134] {NIST SP 800-122\\\textit{PII Confidentiality Safeguards}};
+
+% Solid arrows (ISO structure)
+\draw[->, thick] (iso29100) -- node[right=-1cm, draw=none]{\scriptsize provides principles\\\scriptsize and definitions} (iso29134);
+\draw[->, thick] (iso29134) --  node[right=-1cm, draw=none]{\scriptsize provides results to\\\scriptsize select controls} (iso29151);
+
+% Dashed arrows to NIST
+\draw[->, thick, dashed] (nist.west) -- node[above, sloped, draw=none]{\scriptsize technical guidance} (iso29151.east);
+\draw[->, thick, dashed] (nist.west) -- node[above=-0.1cm, sloped, draw=none]{\scriptsize complements} (iso29134.east);
+
+\end{tikzpicture}
+\caption{Relationship between ISO/IEC 29100, 29134, 29151 and NIST SP 800-122}
+\end{figure}
+
+To support a better understanding and comparison, the standards are examined based on a set of common
+attributes including \textbf{objectives}, \textbf{scope} and \textbf{level of abstraction} at which they operate. Other comparison criteria
+include the type of \textbf{output} each standard provides, the \textbf{methodological approach} they adopt (principle-base, risk-based, control-based),
+and the various \textbf{roles} and \textbf{stakeholders} they address.
+
+\subsection{Objectives}
+The first aspect to consider is the \textbf{primary objectives} of each standard. 
+ISO/IEC 29100 aims to establish
+a \textbf{high-level framework} for PII protection by defining a \textbf{common terminology}, identifying the \textbf{actors}
+that are involved in PII processing and outlining the fundamental \textbf{principles} for privacy protection.
+
+\vspace{\baselineskip}
+ISO/IEC 29134 has a different objective, focusing on providing a \textbf{structured methodology} for conducting
+Privacy Impact Assessments (PIAs) focusing on the \textbf{identification}, \textbf{evaluation} and \textbf{treatment} of privacy risks
+throughout the whole lifecycle of a process or system. 
+
+\vspace{\baselineskip}
+In contrast ISO/IEC 29151 translates the high-level principles
+of ISO/IEC 29100 and the risk assessment results from ISO/IEC 29134 into \textbf{specific operational controls}
+that organizations can implement to protect PII.
+
+\vspace{\baselineskip}
+Finally, NIST SP 800-122 serves several purposes:
+it offers a \textbf{detailed and context-driven guide} to protecting the confidentiality of PII, introducing
+\textbf{impact levels}, \textbf{risk factors} and \textbf{safeguard recommandations} that organizations can apply based on their specific needs.
+Although their objectives differ significantly, these standards together cover the full spectrum of privacy governance.
+
+\subsection{Methodological Approaches}
+The standards also differ significantly in their \textbf{methodological approach}. 
+ISO/IEC 29100 adopts a \textbf{principle-based methodology} by establishing fundamental privacy principles
+that guide organizations in their PII protection efforts \textbf{without prescribing specific processes or controls}.
+This means that it provides a broad framework that organizations can adapt to their specific context.
+
+\vspace{\baselineskip}
+ISO/IEC 29134, on the other hand, employs a \textbf{risk-based approach} by defining a \textbf{step-by-step procedure}
+for conducting PIAs, including the identification of stakeholders, information flows, evaluation of the threats,
+impacts and likelihoods and the selection of appropriate risk treatment options. 
+
+\vspace{\baselineskip}
+ISO/IEC 29151 takes a \textbf{control-based approach}, translating privacy risks and principles
+into specific \textbf{technical security and privacy controls} aligned with the ISO/IEC 27002 framework.
+
+\vspace{\baselineskip}
+NIST SP 800-122 combines both \textbf{risk-based and control-based approaches} offering 
+detailed criteria for determining PII confidentiality impact levels and recommending safeguards accordingly.
+
+\vspace{\baselineskip}
+These methodological differences illustrate how the standards operate at complementary layers, conceptual,
+analytical, operational and technical, within a \textbf{unified privacy management ecosystem}.
+
+\subsection{Scope and Regulatory Context}
+Another important aspect to consider is the \textbf{scope} and \textbf{regulatory context} of each standard.
+The ISO/IEC 29100 series is designed for \textbf{global applicability} and is intended to be \textbf{technology and jurisdiction-neutral},
+allowing organizations of any size or sector to implement its principles and guidelines for a consistent
+privacy management approach worldwide.
+ISO/IEC 29001, 29134 and 29151 are commonly adopted by organizations seeking to \textbf{align with international best practices}
+for privacy protection, such as GDPR, CCPA or other data protection regulations.
+
+\vspace{\baselineskip}
+NIST SP 800-122, in contrast, originates within the U.S. federal context and is primarily intended for \textbf{federal agencies}
+and entities that handle PII on behalf of the U.S. government. Although it is tailored to the U.S. regulatory environment,
+its guidelines and risk-based reccommendations are widely adopted internationally.
+
+\vspace{\baselineskip}
+These differences highlight how ISO standards aim to support broad governance and organizational compliance \textbf{across different legal contexts},
+while NIST provides detailed operational guidance tailored to a specific regulatory context yet adaptable to broader use cases.
+
+\subsection{Integration and Complementarity}
+A key aspect emerging from this comparison is that the four standars are not intended to function in isolation,
+but are instead \textbf{complementary components} of a comprehensive privacy management architecture. 
+ISO/IEC 29100 establishes the foundational privacy principles and terminology that guide the interpretation and application of the other standards. 
+
+\vspace{\baselineskip}
+ISO/IEC 29134 builds directly on this foundation by providing a structured methodology to assess privacy risks and determine whether and how PII processing 
+may impact individuals. 
+
+\vspace{\baselineskip}
+ISO/IEC 29151 then operationalizes the output of the PIA process by defining concrete controls 
+and implementation guidance tailored to the risks identified through ISO/IEC 29134 and aligned with the principles of ISO/IEC 29100. 
+
+\vspace{\baselineskip}
+NIST SP 800-122 complements this ISO ecosystem by offering detailed technical safeguards and confidentiality impact assessment criteria that organizations 
+can use to strengthen both their risk evaluation and their operational controls.
+
+\vspace{\baselineskip}
+When combined, these standards provide a comprehensive and layered approach that spans conceptual governance, analytical evaluation, 
+operational implementation and technical protection.
+
+\subsection{Critical Discussion}
+Taken together, the four standards reveal a \textbf{complementary balance of strengths} but also \textbf{limitations} that organizations 
+should take into account when adopting them. 
+
+\vspace{\baselineskip}
+ISO/IEC 29100 and ISO/IEC 29134 are very strong in 
+providing a structured governance perspective (defining principles, roles and risk assessment methodologies) but they
+leave implementation choises to organizations. ISO/IEC 29151 fills this gap by providing concrete controls, but
+its effectiveness depends on the quality of the underlying risk assessment process and the organization's ability
+to adapt controls to their specific context. 
+
+\vspace{\baselineskip}
+NIST SP 800-122 excels for its practical orientation and detailed guidance 
+on condifentiality safeguards, but its focus is narrower than that of the ISO standards and primarly centered on U.S. federal environment.
+
+\vspace{\baselineskip}
+Despite these limitations, the standards are most effective when used in combination: 
+ISO provides the governance and \textbf{methodological backbone} while NIST enriches the framework with \textbf{actionable technical criteria}. 
+This layered approach enables organizations to build privacy programs that are conceptually robust, risk-aware and operationally sound, 
+while maintaining the flexibility needed to adapt to varying legal and technical contexts.
+
+\begin{table}[h!]
+    \centering
+    % chktex-file 44
+    \begin{tabular}{|>{\raggedright\arraybackslash}p{3.5cm}|
+                >{\raggedright\arraybackslash}p{3.5cm}|
+                >{\raggedright\arraybackslash}p{3.5cm}|
+                >{\raggedright\arraybackslash}p{3.5cm}|}
+    \hline
+    \textbf{Dimension} &
+    \textbf{ISO/IEC 29100} &
+    \textbf{ISO/IEC 29134} &
+    \textbf{ISO/IEC 29151} \\
+    \hline
+
+    \textbf{Primary Objective} &
+    Define privacy framework, principles and roles &
+    Provide methodology for Privacy Impact Assessment (PIA) &
+    Define operational controls for PII protection \\ 
+    \hline
+
+    \textbf{Approach} &
+    Principle-based, conceptual &
+    Risk-based, methodological &
+    Control-oriented, implementation-driven \\
+    \hline
+
+    \textbf{Output} &
+    Privacy principles, terminology, actors &
+    PIA report, risk evaluation, treatment plan &
+    Set of privacy and security controls aligned with ISO/IEC 27002 \\
+    \hline
+
+    \textbf{Scope of Application} &
+    All organizations processing PII &
+    Projects, systems or processes involving PII &
+    Organizations implementing operational privacy safeguards \\
+    \hline
+
+    \textbf{Role in Privacy Management} &
+    Foundational layer: defines “what” privacy requires &
+    Analytical layer: evaluates “how” PII processing affects individuals &
+    Operational layer: defines “how” risks must be mitigated \\
+    \hline
+    \end{tabular}
+
+\vspace{0.5cm}
+
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|>{\raggedright\arraybackslash}p{3.5cm}|p{10.5cm}|}
+\hline
+\textbf{NIST SP 800-122} &
+Provides technical guidance for protecting the confidentiality of PII, defining impact levels, risk factors and recommended safeguards. Complements ISO 29134 and ISO 29151 with detailed technical criteria. \\
+\hline
+\end{tabular}
+
+\caption{Comparative overview of ISO/IEC 29100, 29134, 29151 and NIST SP 800-122}
+\end{table}
