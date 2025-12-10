@@ -17,7 +17,8 @@
 \usepackage{array}
 \usepackage{url}
 \usepackage{cite}
-
+\usepackage{tikz}
+\usetikzlibrary{positioning}
 
 \title{
     \includegraphics[width=0.25\textwidth]{images/polito.png} \\[1.5cm]
@@ -64,14 +65,18 @@
 
 % Section 2: NIST SP 800-122
 \input{sections/section02.tex}
+\clearpage
 
-\newpage
 % Section 3: ISO/IEC 29151
 \input{sections/section03.tex}
 \clearpage
 
-%section 4: ISO/IEC 29134
+% Section 4: ISO/IEC 29134
 \input{sections/section04.tex}
+\clearpage
+
+% Section 5: Comparative Analysis
+\input{sections/section05.tex}
 \clearpage
 
 \nocite{*}
